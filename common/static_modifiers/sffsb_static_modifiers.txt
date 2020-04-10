@@ -1,0 +1,9 @@
+# Ship in Combat
+ship_in_combat = {
+	ship_speed_mult = -0.75
+}
+
+# Not in Combat
+not_in_combat = {
+	ship_speed_mult = 2.5
+}

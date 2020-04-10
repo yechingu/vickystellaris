@@ -1,0 +1,11 @@
+on_policy_changed = {
+	events = {
+		hnm_economic_policy_effector_event.1
+		hnm_economic_policy_effector_event.2
+		hnm_economic_policy_effector_event.3
+		hnm_economic_policy_effector_event.4
+		hnm_economic_policy_effector_event.5
+		hnm_economic_policy_effector_event.6
+		hnm_economic_policy_effector_event.7
+	}
+}

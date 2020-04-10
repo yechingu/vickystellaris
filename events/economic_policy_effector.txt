@@ -1,0 +1,224 @@
+namespace = hnm_economic_policy_effector_event
+
+country_event = {
+	id = hnm_economic_policy_effector_event.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				has_policy_flag = economic_policy_partial_mobilization
+			}
+			every_owned_pop = {
+				limit = {
+					has_job = laborer
+				}
+				add_modifier = {
+					modifier = pop_partial_mobilization_impact
+				}
+				remove_modifier = 
+					"pop_demilitarized_economy_impact"
+				remove_modifier = 
+					"pop_war_economy_impact"
+				remove_modifier = 
+					"pop_total_mobilization_impact"
+				remove_modifier = 
+					"pop_desperate_measures_impact"
+				remove_modifier = 
+					"pop_civilian_economy_impact"
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hnm_economic_policy_effector_event.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				has_policy_flag = economic_policy_war_economy
+			}
+			every_owned_pop = {
+				limit = {
+					has_job = laborer
+				}
+				add_modifier = {
+					modifier = pop_war_economy_impact
+				}
+				remove_modifier = 
+					"pop_demilitarized_economy_impact"
+				remove_modifier = 
+					"pop_partial_mobilization_impact"
+				remove_modifier = 
+					"pop_total_mobilization_impact"
+				remove_modifier = 
+					"pop_desperate_measures_impact"
+				remove_modifier = 
+					"pop_civilian_economy_impact"
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hnm_economic_policy_effector_event.3
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				has_policy_flag = economic_policy_total_mobilization
+			}
+			every_owned_pop = {
+				limit = {
+					has_job = laborer
+				}
+				add_modifier = {
+					modifier = pop_total_mobilization_impact
+				}
+				remove_modifier = 
+					"pop_demilitarized_economy_impact"
+				remove_modifier = 
+					"pop_partial_mobilization_impact"
+				remove_modifier = 
+					"pop_war_economy_impact"
+				remove_modifier = 
+					"pop_desperate_measures_impact"
+				remove_modifier = 
+					"pop_civilian_economy_impact"
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hnm_economic_policy_effector_event.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_policy_flag = economic_policy_desperate_measures
+			}
+			every_owned_pop = {
+				limit = {
+					has_job = laborer
+				}
+				add_modifier = {
+					modifier = pop_desperate_measures_impact
+				}
+				remove_modifier = 
+					"pop_demilitarized_economy_impact"
+				remove_modifier = 
+					"pop_partial_mobilization_impact"
+				remove_modifier = 
+					"pop_war_economy_impact"
+				remove_modifier = 
+					"pop_total_mobilization_impact"
+				remove_modifier = 
+					"pop_civilian_economy_impact"
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hnm_economic_policy_effector_event.5
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				has_policy_flag = economic_policy_demilitarized
+			}
+			every_owned_pop = {
+				limit = {
+					has_job = laborer
+				}
+				add_modifier = {
+					modifier = pop_civilian_economy_impact
+				}
+				remove_modifier = 
+					"pop_demilitarized_economy_impact"
+				remove_modifier = 
+					"pop_partial_mobilization_impact"
+				remove_modifier = 
+					"pop_war_economy_impact"
+				remove_modifier = 
+					"pop_total_mobilization_impact"
+				remove_modifier = 
+					"pop_desperate_measures_impact"
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hnm_economic_policy_effector_event.6
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_policy_flag = economic_policy_demilitarized
+			}
+			every_owned_pop = {
+			limit = {
+				has_job = laborer
+			}
+			add_modifier = {
+				modifier = pop_demilitarized_economy_impact
+			}
+			remove_modifier = 
+				"pop_civilian_economy_impact"
+			remove_modifier = 
+				"pop_partial_mobilization_impact"
+			remove_modifier = 
+				"pop_war_economy_impact"
+			remove_modifier = 
+				"pop_total_mobilization_impact"
+			remove_modifier = 
+				"pop_desperate_measures_impact"
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hnm_economic_policy_effector_event.7
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				has_policy_flag = economic_policy_production_focus
+			}
+			every_owned_pop = {
+			limit = {
+				has_job = laborer
+			}
+			remove_modifier = 
+				"pop_demilitarized_economy_impact"
+			remove_modifier = 
+					"pop_civilian_economy_impact"
+			remove_modifier = 
+					"pop_partial_mobilization_impact"
+			remove_modifier = 
+					"pop_war_economy_impact"
+			remove_modifier = 
+				"pop_total_mobilization_impact"
+			remove_modifier = 
+				"pop_desperate_measures_impact"
+			}
+		}
+	}
+}

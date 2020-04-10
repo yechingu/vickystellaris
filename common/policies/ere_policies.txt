@@ -1,0 +1,802 @@
+economic_policy = {
+	potential = {	
+		is_regular_empire = yes
+	}
+
+	option = {
+		name = "economic_policy_demilitarized"
+		
+		valid = {
+			is_at_war = no
+		}
+		
+		modifier = {
+			planet_jobs_laborer_consumer_goods_produces_add = 0.25
+			planet_jobs_laborer_alloys_produces_add = -0.25
+			pop_happiness = 0.10
+			pop_growth_speed = 0.25
+			trade_value_mult = 0.25
+			planet_army_build_time_mult = -0.50
+			starbase_shipyard_build_speed_mult = -0.25
+		}
+		
+		policy_flags = {
+			economic_policy_demilitarized
+		}
+		
+		AI_weight = {
+			factor = 0.1
+			modifier = {
+				factor = 20
+				or = {
+					has_ethic = "ethic_pacifist"
+					has_ethic = "ethic_fanatic_pacifist"
+				}
+			}
+			modifier = {
+				factor = 0
+				or = {
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "economic_policy_civilian"
+		
+		valid = {
+			is_at_war = no
+		}
+
+		policy_flags = {
+			economic_policy_civilian
+		}
+		
+		modifier = {
+			planet_jobs_laborer_consumer_goods_produces_add = 0.25
+			planet_jobs_laborer_alloys_produces_add = -0.1
+			trade_value_mult = 0.1
+			pop_growth_speed = 0.10
+		}
+		
+		AI_weight = {
+			factor = 1
+			
+			modifier = {
+				factor = 10 
+				or = {
+					has_ethic = "ethic_pacifist"
+					has_ethic = "ethic_fanatic_pacifist"
+				}
+			}
+			modifier = {
+				factor = 0.1
+				or = {
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "economic_policy_production_focus"
+		
+		valid = {
+			is_at_war = no
+		}
+
+		policy_flags = {
+			economic_policy_production_focus
+		}
+		
+		modifier = {
+		}
+		
+		AI_weight = {
+			factor = 5
+			
+			modifier = {
+				factor = 0
+				or = {
+					has_ethic = "ethic_pacifist"
+					has_ethic = "ethic_fanatic_pacifist"
+				}
+			}
+			modifier = {
+				factor = 0.75
+				or = {
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "economic_policy_partial_mobilization"
+
+		policy_flags = {
+			economic_policy_partial_mobilization
+		}
+		
+		modifier = {
+			planet_jobs_laborer_consumer_goods_produces_add = -0.1
+			planet_jobs_laborer_alloys_produces_add = 0.1
+			planet_metallurgists_alloys_produces_add = 0.2
+			trade_value_mult = -0.05
+			pop_happiness = -0.05
+			pop_growth_speed = -0.05
+		}
+		
+		AI_weight = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_at_war = no
+			}
+			modifier = {
+				factor = 0.25
+				or = {
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+			modifier = {
+				factor = 20
+				is_at_war = yes
+			}
+		}
+	}
+	
+	option = {
+		name = "economic_policy_war_economy"
+		
+		valid = {
+			is_at_war = yes
+		}
+
+		policy_flags = {
+			economic_policy_war_economy
+		}
+		
+		modifier = {
+			planet_jobs_laborer_consumer_goods_produces_add = -0.25
+			planet_jobs_laborer_alloys_produces_add = 0.25
+			planet_metallurgists_alloys_produces_add = 0.5
+			pop_cat_worker_happiness = -0.05
+			trade_value_mult = -0.15
+			pop_growth_speed = -0.15
+			planet_jobs_minerals_produces_mult = 0.15
+			planet_jobs_energy_produces_mult = 0.15
+			pop_happiness = -0.10
+			planet_pops_upkeep_mult = -0.15
+		}
+		
+		AI_weight = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				or = {
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+			modifier = {
+				factor = 100
+				or = {
+					has_ethic = "ethic_pacifist"
+					has_ethic = "ethic_fanatic_pacifist"
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "economic_policy_total_mobilization"
+		
+		valid = {
+			is_at_war = yes
+		}
+
+		policy_flags = {
+			economic_policy_total_mobilization
+		}
+		
+		modifier = {
+			planet_jobs_laborer_consumer_goods_produces_add = -0.5
+			planet_jobs_laborer_alloys_produces_add = 0.35
+			planet_metallurgists_alloys_produces_add = 0.75
+			pop_cat_worker_happiness = -0.10
+			pop_cat_specialist_happiness = -0.10
+			pop_cat_ruler_happiness = -0.05
+			pop_growth_speed = -0.35
+			planet_jobs_minerals_produces_mult = 0.3
+			planet_jobs_energy_produces_mult = 0.3
+			pop_happiness = -0.10
+			planet_pops_upkeep_mult = -0.30
+		}
+		
+		AI_weight = {
+			factor = 1
+			modifier = {
+				factor = 2
+				or = {
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "economic_policy_desperate_measures"
+		
+		valid = {
+			is_at_war = yes
+		}
+
+		policy_flags = {
+			economic_policy_desperate_measures
+		}
+		
+		modifier = {
+			planet_jobs_laborer_consumer_goods_produces_add = -0.75
+			planet_jobs_laborer_alloys_produces_add = 0.5
+			planet_metallurgists_alloys_produces_add = 1
+			pop_cat_worker_happiness = -0.20
+			pop_cat_specialist_happiness = -0.15
+			pop_cat_ruler_happiness = -0.10
+			pop_growth_speed = -0.75
+			planet_jobs_minerals_produces_mult = 0.35
+			planet_jobs_energy_produces_mult = 0.35
+			pop_happiness = -0.10
+			planet_pops_upkeep_mult = -0.50
+			planet_stability_add = -10
+		}
+		
+		AI_weight = {
+			factor = 0
+		}
+	}
+}
+
+production_policy = {
+	potential = {
+		has_ethic = ethic_gestalt_consciousness
+	}
+	
+	option = {
+		name = "production_policy_servitor_pampering_focus"
+		potential = {
+			has_civic = civic_machine_servitor
+		}
+		valid ={
+			is_at_war = no
+		}
+		
+		modifier ={
+			planet_jobs_consumer_goods_produces_mult = 0.25
+			planet_jobs_alloys_produces_mult = -0.10
+			planet_stability_add = 5
+			pop_happiness = 0.10
+		}
+		
+		ai_weight = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "production_policy_demilitarized_hive"
+		
+		potential = {
+			has_authority = auth_hive_mind
+		}
+		valid = {
+			is_at_war = no
+		}
+		
+		modifier = {
+			pop_amenities_usage_no_happiness_mult = -0.1
+			pop_growth_speed = 0.25
+			planet_jobs_energy_produces_mult = 0.10
+			planet_jobs_minerals_produces_mult = 0.10
+			planet_jobs_alloys_produces_mult = -0.15
+			planet_army_build_time_mult = 0.10
+			starbase_shipyard_build_speed_mult = -0.15
+		}
+		
+		ai_weight = {
+			factor = 3
+		}
+	}
+	
+	option = {
+		name = "production_policy_regular_production_machine"
+		
+		potential = {
+			has_authority = auth_machine_intelligence
+		}
+		valid = {
+			is_at_war = no
+		}
+		modifier = {
+		}
+		ai_weight = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "production_policy_regular_production_hive"
+		
+		potential = {
+			has_authority = auth_hive_mind
+		}
+		valid = {
+			is_at_war = no
+		}
+		
+		modifier = {
+			pop_growth_speed = 0.10
+		}
+		ai_weight = {
+			factor = 5
+		}
+	}
+	
+	option = {
+		name = "production_policy_normal_war_machine"
+		
+		potential = {
+			NOT = {
+				has_civic = civic_machine_servitor
+			}
+			has_authority = auth_machine_intelligence
+		}
+		valid = {
+			is_at_war = yes
+		}
+		
+		modifier = {
+			pop_amenities_usage_no_happiness_mult = 0.15
+			planet_jobs_alloys_produces_mult = 0.10
+			planet_army_build_time_mult = -0.25
+			starbase_shipyard_build_speed_mult = 0.25
+			planet_pops_upkeep_mult = -0.05
+			planet_pop_assembly_mult = -0.35
+		}
+		ai_weight = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "production_policy_normal_war_servitor"
+		
+		potential = {
+			has_civic = civic_machine_servitor
+		}
+		valid = {
+			is_at_war = yes
+		}
+		
+		modifier = {
+			pop_amenities_usage_no_happiness_mult = 0.10
+			planet_jobs_alloys_produces_mult = 0.15
+			planet_jobs_consumer_goods_produces_mult = -0.15
+			planet_pops_consumer_goods_upkeep_mult = -0.15
+			planet_jobs_energy_produces_mult = 0.05
+			planet_jobs_minerals_produces_mult = 0.05
+			planet_army_build_time_mult = -0.25
+			starbase_shipyard_build_speed_mult = 0.25
+			planet_pops_upkeep_mult = -0.05
+			pop_happiness = -0.10
+			pop_growth_speed = -0.15
+			planet_pop_assembly_mult = -0.25
+		}
+		ai_weight = {
+			factor = 10
+		}
+	}
+	
+	option = {
+		name = "production_policy_normal_war_hive"
+		
+		potential = {
+			has_authority = auth_hive_mind
+		}
+		valid = {
+			is_at_war = yes
+		}
+		
+		modifier = {
+			planet_jobs_alloys_produces_mult = 0.10
+			planet_army_build_time_mult = -0.25
+			starbase_shipyard_build_speed_mult = 0.25
+			pop_growth_speed = -0.35
+			planet_pops_upkeep_mult = -0.05
+		}
+	}
+	
+	option = {
+		name = "production_policy_intensive_war_machine"
+		
+		potential = {
+			has_authority = auth_machine_intelligence
+		}
+		valid = {
+			is_at_war = yes
+		}
+		
+		modifier = {
+			pop_amenities_usage_no_happiness_mult = 0.30
+			planet_jobs_alloys_produces_mult = 0.25
+			planet_army_build_time_mult = -0.50
+			starbase_shipyard_build_speed_mult = 0.50
+			planet_pops_upkeep_mult = -0.15
+			planet_pop_assembly_mult = -0.75
+		}
+		ai_weight = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "production_policy_intensive_war_servitor"
+		
+		potential = {
+			has_civic = civic_machine_servitor
+		}
+		valid = {
+			is_at_war = yes
+		}
+		
+		modifier = {
+			pop_amenities_usage_no_happiness_mult = 0.20
+			planet_jobs_alloys_produces_mult = 0.35
+			planet_jobs_consumer_goods_produces_mult = -0.25
+			planet_pops_consumer_goods_upkeep_mult = -0.25
+			planet_jobs_energy_produces_mult = 0.15
+			planet_jobs_minerals_produces_mult = 0.15
+			pop_happiness = -0.25
+			pop_growth_speed = -0.45
+			planet_army_build_time_mult = -0.50
+			starbase_shipyard_build_speed_mult = 0.50
+			planet_pops_upkeep_mult = -0.15
+			planet_pop_assembly_mult = -0.75
+		}
+		ai_weight = {
+			factor = 1
+		}
+	}
+	
+	option = {
+		name = "production_policy_intensive_war_hive"
+		
+		potential = {
+			has_authority = auth_hive_mind
+		}
+		valid = {
+			is_at_war = yes
+		}
+		
+		modifier = {
+			pop_amenities_usage_no_happiness_mult = 0.15
+			planet_jobs_alloys_produces_mult = 0.25
+			planet_army_build_time_mult = 0.50
+			starbase_shipyard_build_speed_mult = 0.50
+			pop_growth_speed = -0.75
+			planet_pops_upkeep_mult = -0.15
+		}
+		ai_weight = {
+			factor = 1
+		}
+	}
+
+}
+
+war_doctrine = {
+	potential = {
+		is_country_type = default
+		has_tradition = tr_supremacy_finish
+	}
+
+	option = {
+		name = "defense_in_depth_doctrine"
+		
+		policy_flags = {}	
+		modifier = {
+			ship_home_territory_fire_rate_mult = 0.10
+			shipclass_starbase_damage_mult = 0.15
+			shipclass_starbase_hull_mult = 0.10
+		}
+		
+		AI_weight = {
+			factor = 1
+			
+			modifier = {
+				factor = 0
+				NOR = {
+					has_ethic = ethic_pacifist
+					has_ethic = ethic_fanatic_pacifist
+				}
+			}
+			
+			modifier = {
+				factor = 200
+				OR = {
+					has_ethic = ethic_pacifist
+					has_ethic = ethic_fanatic_pacifist
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "hit_and_run_doctrine"
+		
+		policy_flags = {}
+		modifier = {
+			ship_disengage_chance_mult = 0.33
+			ship_emergency_ftl_mult = -0.25
+		}	
+
+		AI_weight = {
+			factor = 1
+			
+			modifier = {
+				factor = 10
+				is_regular_empire = yes
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+				has_ethic = ethic_gestalt_consciousness
+				has_civic = civic_fanatic_purifiers
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "rapid_deployment_doctrine"
+		
+		policy_flags = {}	
+		modifier = {
+			ship_speed_mult = 0.25
+			ship_weapon_range_mult = 0.10
+		}
+		
+		AI_weight = {
+			factor = 20
+			modifier = {
+				factor = 0.1
+				NOR = { 
+				is_preferred_weapons = weapon_type_explosive 
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+				has_ethic = ethic_gestalt_consciousness
+				}
+			}			
+		}
+	}
+	
+	option = {
+		name = "no_retreat_doctrine"	
+		
+		valid = {
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+				has_ethic = ethic_gestalt_consciousness
+				has_civic = civic_fanatic_purifiers
+			}	
+		}
+		
+		policy_flags = {}
+		modifier = {
+			ship_disengage_chance_reduction = 1
+			ship_emergency_ftl_min_days_mult = 0.5
+			ship_fire_rate_mult = 0.33
+		}	
+
+		AI_weight = {
+			factor = 0.1
+			modifier = {
+				factor = 0
+				NOR = {
+					has_civic = civic_fanatic_purifiers
+					has_ai_personality = devouring_swarm 
+				}
+			}
+			modifier = {
+				factor = 1000
+				OR = {
+					has_civic = civic_fanatic_purifiers
+					has_ai_personality = devouring_swarm 
+				}
+			}
+		}		
+	}
+}
+
+maintenance_policy = {
+	potential = {
+		is_regular_empire = yes
+	}
+	
+	option = {
+		name = force_maintenance_policy_min
+		
+		valid = {
+			is_at_war = no
+		}
+		modifier = {
+			ships_upkeep_mult = -0.75
+			ship_fire_rate_mult = -0.30
+			planet_army_build_time_mult = 0.50
+			starbase_shipyard_build_speed_mult = -0.50
+			diplo_weight_economy_mult = 1
+			diplo_weight_naval_mult = -0.25
+		}
+		AI_weight = {
+			factor = 0
+		}
+	}
+	
+	option = {
+		name = force_maintenance_policy_low
+		
+		valid = {
+			is_at_war = no
+		}
+		modifier = {
+			ships_upkeep_mult = -0.25
+			ship_fire_rate_mult = -0.10
+			planet_army_build_time_mult = 0.25
+			starbase_shipyard_build_speed_mult = -0.25
+			diplo_weight_economy_mult = 0.5
+			diplo_weight_naval_mult = -0.1
+		}
+		AI_weight = {
+			factor = 1
+			modifier = {
+				factor = 10
+				or = {
+					has_ethic = "ethic_pacifist"
+					has_ethic = "ethic_fanatic_pacifist"
+				}
+			}
+			modifier = {
+				factor = 0
+				or = {
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+		}
+	}
+	option = {
+		name = force_maintenance_policy_normal
+		
+		AI_weight = {
+			factor = 10
+			modifier = {
+				factor = 0.25
+				or = {
+					has_ethic = "ethic_pacifist"
+					has_ethic = "ethic_fanatic_pacifist"
+				}
+			}
+			modifier = {
+				factor = 0.50
+				or = {
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+		}
+	}
+	option = {
+		name = force_maintenance_policy_raised
+		
+		modifier = {
+			ships_upkeep_mult = 0.10
+			ship_home_territory_fire_rate_mult = 0.05
+			ship_fire_rate_mult = 0.05
+			planet_army_build_time_mult = -0.25
+			starbase_shipyard_build_speed_mult = 0.2
+			diplo_weight_naval_mult = 0.1
+			diplo_weight_economy_mult = -0.2
+		}
+		
+		AI_weight = {
+			factor = 1
+			modifier = {
+				factor = 0.25
+				or = {
+					has_ethic = "ethic_pacifist"
+					has_ethic = "ethic_fanatic_pacifist"
+				}
+			}
+			modifier = {
+				factor = 20
+				or = {
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+					is_at_war = yes
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = force_maintenance_policy_high
+		
+		valid = {
+			or = {
+				is_at_war = yes
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+		
+		modifier = {
+			ships_upkeep_mult = 0.25
+			ship_home_territory_fire_rate_mult = 0.10
+			ship_fire_rate_mult = 0.05
+			planet_army_build_time_mult = -0.50
+			starbase_shipyard_build_speed_mult = 0.5
+			ship_hull_mult = 0.05
+			diplo_weight_naval_mult = 0.2
+			diplo_weight_economy_mult = -0.35
+		}
+		
+		AI_weight = {
+			factor = 1
+			modifier = {
+				factor = 5
+				or = {
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = force_maintenance_policy_max
+		
+		valid = {
+			and = {
+				is_at_war = yes
+				or = {
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+		}
+		
+		modifier = {
+			ships_upkeep_mult = 0.50
+			ship_home_territory_fire_rate_mult = 0.25
+			ship_fire_rate_mult = 0.10
+			planet_army_build_time_mult = -0.75
+			starbase_shipyard_build_speed_mult = 0.75
+			ship_hull_mult = 0.10
+			diplo_weight_naval_mult = 0.35
+			diplo_weight_economy_mult = -0.75
+		}
+		
+		AI_weight = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,6 @@
+ai_bio_ascension_1 = {
+    BIOLOGICAL_species_trait_points_add = -3
+    pop_environment_tolerance = 0.05
+    planet_jobs_produces_mult = 0.05
+    leader_age = 15
+}

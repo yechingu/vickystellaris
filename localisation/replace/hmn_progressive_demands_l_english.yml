@@ -1,0 +1,25 @@
+﻿l_english
+ PROGRESSIVE_COLONIALIZATION_RIGHT:0 "Colonization Rights for all"
+ PROGRESSIVE_COLONIALIZATION_RIGHT_DESC:0 "Allowing all Citizens and Residents to colonize will saticefy this faction."
+ PROGRESSIVE_COLONIALIZATION_RIGHT_LOBBYING:0 "Lobbying for the 'Universal' Colonzation Rights"
+
+ PROGRESSIVE_NO_RESETTLEMENT:0 "Resettlement Banned"
+ PROGRESSIVE_NO_RESETTLEMENT_DESC:0 "Fully disallowing Resettlement will saticefy this faction."
+ PROGRESSIVE_NO_RESETTLEMENT_LOBBYING:o "Lobbying for Banning Resettlement"
+
+ PROGRESSIVE_SUBSIDIZED_RESTTLEMENT:0 "Subsidized Resettlement"
+ PROGRESSIVE_SUBSIDIZED_RESTTLEMENT_DESC:0 "Subsidizing Resettlement will make this faction less unsaticefied about our Resettlement Policy."
+ PROGRESSIVE_SUBSIDIZED_RESTTLEMENT_LOBBYING:0 "Lobbying for the Subsidized Resettlement"
+
+ PROGRESSIVE_COMPENSATED_RESTTLEMENT:0 "Compensated Resettlement"
+ PROGRESSIVE_COMPENSATED_RESTTLEMENT_DESC:0 "Compensating Resettlement will make this faction less unsaticefied about our Resettlement Policy"
+ PROGRESSIVE_COMPENSATED_RESTTLEMENT_LOBBYING:0 "Lobbying for the Compensated Resettlement"
+
+ PROGRESSIVE_NO_FORCED_RESETTLEMENT:0 "No Unrestriced Resettlement"
+ PROGRESSIVE_NO_FORCED_RESETTLEMENT_DESC:0 "Enacting Unrestricted Resettlement will outrage this faction."
+ PROGRESSIVE_FORCED_RESETTLEMENT_OBJECTION:0 "Unrestriced Resettlement Objection"
+
+ PROGRESSIVE_UNIVERSAL_SUFFRAGE:0 "Universal Suffrage"
+ PROGRESSIVE_UNIVERSAL_SUFFRAGE_DESC:0 "Having fully Democratic Authority instead of Oligarchy or Autocratic Government wilL saticefy this faction."
+ PROGRESSIVE_UNIVERSAL_SUFFRAGE_LOBBYING:0 "Lobbying for the Universal Suffrage"
+ 

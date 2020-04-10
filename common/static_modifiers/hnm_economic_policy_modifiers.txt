@@ -1,0 +1,22 @@
+pop_demilitarized_economy_impact = {
+	pop_happiness = 0.15
+}
+pop_civilian_economy_impact  = {
+	pop_happiness = 0.05
+}
+
+pop_partial_mobilization_impact  = {
+	pop_happiness = -0.05
+}
+
+pop_war_economy_impact = {
+	pop_happiness = -0.05
+}
+
+pop_total_mobilization_impact = {
+	pop_happiness = -0.05
+}
+
+pop_desperate_measures_impact = {
+	pop_happiness = -0.1
+}

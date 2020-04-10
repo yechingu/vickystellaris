@@ -1,0 +1,101 @@
+﻿l_english:
+ economic_policy_demilitarized:0 "Demilitarized Economy"
+ economic_policy_demilitarized_name:0 "$economic_policy_demilitarized$"
+ economic_policy_demilitarized_desc:0 "Spending our precious productions for a violence is waste of our potential. Demilitarizing our economy will harm our ability to arm, but it will provide massive boon for economic growth."
+
+ economic_policy_production_focus:0 "Production Focus"
+ economic_policy_production_focus_name:0 "$economic_policy_production_focus$"
+ economic_policy_production_focus_desc:0 "Expanding our military is essential for safe-guarding our country's well-being. By guiding our industries to important productions, we can improve our military production with minimal cost. However, laborers will not be happy with extended work shifts."
+
+ economic_policy_partial_mobilization:0 "Partial Mobilization"
+ economic_policy_partial_mobilization_name:0 "$economic_policy_partial_mobilization$"
+ economic_policy_partial_mobilization_desc:0 "Our country is facing imminent threat, and we must prepare for armed conflicts. We can initiate limited mobilization without being at war, though people will not be very happy with it."
+
+ economic_policy_war_economy:0 "War Economy"
+ economic_policy_war_economy_name:0 "$economic_policy_war_economy$"
+ economic_policy_war_economy_desc:0 "Our country is at WAR. All regular production schedules are canceled, and our work forces are being mobilized for war-time production. Our country expects all of its Pops to sieze luxurious wasting."
+
+ economic_policy_total_mobilization:0 "Total Mobilization"
+ economic_policy_total_mobilization_name:0 "$economic_policy_total_mobilization$"
+ economic_policy_total_mobilization_desc:0 "Civilizations have seen many 'wars that is said to be ending everything' when people were bound to home planet. For Star-Faring Civilizations, War can end 'more' than 'everything.' We are here to face the Total War that is far more 'Total War' than anytime before. (Total Mobilization massively increases your production, but it will have SIGNIFICANT impact on your Economy and Pops.)" 
+
+ economic_policy_desperate_measures:0 "Desperate Measures"
+ economic_policy_desperate_measures_name:0 "Desperate Measures"
+ economic_policy_desperate_measures_desc:0 "Just, one more turn... (If you are THIS much desperate, yes you should select this policy. Otherwise, it will have detrimental consequences.)"
+
+ policy_production_policy:0 "Production Policy"
+ policy_production_policy_desc:0 "As the collective mind itself, you can direct your drones to focus on specific type of production."
+ 
+ production_policy_servitor_pampering_focus:0 "Pampering Focus"
+ production_policy_servitor_pampering_focus_name:0 "Pampering Focus"
+ production_policy_servitor_pampering_focus_desc:0 "To Serve and Protect."
+
+ production_policy_demilitarized_hive:0 "Demilitarized Production"
+ production_policy_demilitarized_hive_name:0 "Demilitarized Production"
+ production_policy_demilitarized_hive_desc:0 "When our collective is not facing any incomming threat, we must focus on caring ourselves."
+
+ production_policy_regular_production_machine:0 "Standard Production"
+ production_policy_regular_production_machine_name:0 "Standard Production"
+ production_policy_regular_production_machine_desc:0 "Production scheduler nominal."
+
+ production_policy_regular_production_hive:0 "Regular Production"
+ production_policy_regular_production_hive_name:0 "Regular Production"
+ production_policy_regular_production_hive_desc:0 "The collective is not at any imminent danger, but we still needs to be vigilant. We are on regular production schedule, and no production is specifically priotized, for now."
+
+ production_policy_normal_war_machine:0 "War Protocol"
+ production_policy_normal_war_machine_name:0 "War Protocol"
+ production_policy_normal_war_machine_desc:0 "War Protocol initiated, diverting production capability for an armed conflict."
+
+ production_policy_normal_war_servitor:0 "Service Expansion"
+ production_policy_normal_war_servitor_name:0 "Service Expansion"
+ production_policy_normal_war_servitor_desc:0 "We are expanding our service, diverting production capability to free our masters from burdens."
+
+ production_policy_normal_war_hive:0 "Nest Defence"
+ production_policy_normal_war_hive_name:0 "Nest Defence"
+ production_policy_normal_war_hive_desc:0 "The others are cunning to take over the collective's nests. Major parts of the collective have been diverted for the armed conflict."
+
+ production_policy_intensive_war_machine:0 "Emergency Production"
+ production_policy_intensive_war_machine_name:0 "Emergency Production"
+ production_policy_intensive_war_machine_desc:0 "Malignant forces are rapidly compromising our systems. All insigificant precedures are now being by-passed, for the greater protection of our system integrity."
+
+ production_policy_intensive_war_servitor:0 "Protection Protocol"
+ production_policy_intensive_war_servitor_name:0 "Protection Protocol"
+ production_policy_intensive_war_servitor_desc:0 "To Protect and Serve."
+
+ production_policy_intensive_war_hive:0 "Hive Overload"
+ production_policy_intensive_war_hive_name:0 "Hive Overload"
+ production_policy_intensive_war_hive_desc:0 "Our Nests are being burn downed to rubbles by the Others. We will NOT accept this. The collective is desperatly fighting against the Others, discarding all of its self-maintianing capabilities."
+
+ policy_maintenance_policy:0 "Military Maintenance"
+ policy_maintenance_policy_desc:0 "Military is important part of our country, but it's maintenance costs can be burdensome. Unless there is special reason, military maintenance must be at optimal level."
+
+ force_maintenance_policy_min:0 "Mothball"
+ force_maintenance_policy_min_name:0 "Mothball"
+ force_maintenance_policy_min_desc:0 "Who needs military anyway?"
+ 
+ force_maintenance_policy_low:0 "Lowered Maintenance"
+ force_maintenance_policy_low_name:0 "Lowered Maintenance"
+ force_maintenance_policy_low_desc:0 "It cost so much resorces to keep our military fully running, though our military do not 'always' need to be fully running. We can lower our military spending to reduce maintenance cost, with cost of military's readiness."
+
+ force_maintenance_policy_normal:0 "Normal Maintenance"
+ force_maintenance_policy_normal_name:0 "Normal Maintenance"
+ force_maintenance_policy_normal_desc:0 "We do not need our military immediately, but we still need our military to be ready."
+
+ force_maintenance_policy_raised:0 "Raised Maintenance"
+ force_maintenance_policy_raised_name:0 "Raised Maintenance"
+ force_maintenance_policy_raised_desc:0 "Maybe we are facing immiment threat, or just want to raise military spending. Whatever the reason is, raising military spending can slightly improve our miltiary's capability"
+
+ force_maintenance_policy_high:0 "Full Maintenance"
+ force_maintenance_policy_high_name:0 "Full Maintenance"
+ force_maintenance_policy_high_desc:0 "At the time when we have to be ready, we may provide extravegant budget for our military, though allowing military to devour our budget usually do not yield any significant improvement."
+
+ force_maintenance_policy_max:0 "Fanatical Military Spending"
+ force_maintenance_policy_max_name:0 "Fanatical Military Spending"
+ force_maintenance_policy_max_desc:0 "We need military and we want our military to have everthing, for the reason beyond any sapient beings in this Galaxy."
+
+ pop_demilitarized_economy_impact:0 "Demilitarized Economy"
+ pop_civilian_economy_impact:0 "Civilian Economy"
+ pop_partial_mobilization_impact:0 "Partial Mobilization"
+ pop_war_economy_impact:0 "War Economy"
+ pop_total_mobilization_impact:0 "Total Mobilization"
+ pop_desperate_measures_impact:0 "Desperate Measures"

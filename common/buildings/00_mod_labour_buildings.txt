@@ -1,0 +1,155 @@
+#############
+# Resource buildings
+#############
+
+building_industrial = {
+	base_buildtime = 480
+
+	category = government
+	
+	potential = {
+		exists = owner
+		owner = { is_regular_empire = yes }
+	}
+	
+	allow = {
+		has_upgraded_capital = yes
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		NOT = {
+			owner = { is_regular_empire = yes  }
+		}
+	}
+	
+	planet_modifier = {
+		job_laborer_add = 5
+	}
+	
+	upgrades = {
+		"building_industrial_expanded"
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 250
+		}			
+		upkeep = {
+			energy = 1
+		}
+	}
+	
+	triggered_desc = {
+		text = job_laborer_effect_desc
+	}
+	
+	ai_weight = {
+		weight = 0.5
+		modifier = {
+			weight = 5
+			planet = {
+				OR = {
+					has_building = building_holo_theatres
+					has_building = building_hyper_entertainment_forum
+				}
+				OR = {
+					num_buildings = { type = building_research_lab_1 value = 3 } #Prevents AI falling behind on research to all but the most research dedicated players
+					has_building = building_research_lab_2
+					has_building = building_research_lab_3
+				}
+				NOR = {
+					has_building = building_industrial
+					has_building = building_industrial_expanded
+				}
+			}
+		}
+	}
+}
+
+building_industrial_expanded = {
+	base_buildtime = 480
+	
+	can_build = no
+
+	category = government
+	
+	potential = {
+		exists = owner
+		owner = { is_regular_empire = yes }
+		has_building = building_industrial
+	}
+	
+	allow = {
+		has_upgraded_capital = yes
+	}
+	
+	destroy_trigger = {
+		exists = owner
+		NOT = {
+			owner = { is_regular_empire = yes  }
+		}
+	}
+	
+	planet_modifier = {
+		job_laborer_add = 10
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 500
+			volatile_motes = 25
+			exotic_gases = 25
+			
+		}	
+		upkeep = {
+			energy = 2
+			exotic_gases = 0.5
+		}		
+	}
+	
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = job_laborer_effect_desc
+	}
+	
+	ai_weight = {
+		weight = 0
+		modifier = {
+			weight = 5
+			OR = {
+				has_building = building_holo_theatres
+				has_building = building_hyper_entertainment_forum
+			}
+			OR = {
+				num_buildings = { type = building_research_lab_1 value = 3 } #Prevents AI falling behind on research to all but the most research dedicated players
+				has_building = building_research_lab_2
+				has_building = building_research_lab_3
+			}
+			NOR = {
+				has_building = building_commercial_zone
+				has_building = building_commercial_megaplex
+			}
+		}
+		modifier = {
+			factor = 10
+			exists = owner
+			owner = {
+				is_megacorp = yes
+			}
+			num_buildings = { type = building_commercial_zone value < 3 }
+		}
+	}
+
+	ai_resource_production = {
+		energy = 1
+		trigger = {
+			always = yes
+		}
+	}
+}

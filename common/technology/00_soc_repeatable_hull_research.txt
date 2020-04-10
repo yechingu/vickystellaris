@@ -1,0 +1,315 @@
+tech_repeatable_improved_damage_control = {
+	area = society
+	cost = @repeatableTechBaseCost
+	cost_per_level = @repeatableTechLevelCost
+	tier = @repeatableTechTier
+	category = { military_theory }
+	levels = -1
+	prerequisites = { tech_battleship_hull_2 }
+	weight = @repeatableTechWeight
+	
+	weight_modifier = {
+		factor = @repatableTechFactor
+	}
+	
+	ai_weight = {
+		factor = 1.0
+	}
+	
+	weight_groups = {
+		repeatable
+	}
+	mod_weight_if_group_picked = {
+		repeatable = 0.01
+	}
+	
+	modifier = {
+		ship_hull_mult = 0.01
+	}
+}
+
+#Protocol: In-Void Panic Response
+tech_normal_empire_soc_hull_1= {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { military_theory }
+	prerequisites = { "tech_doctrine_fleet_size_1" }
+	weight = @tier2weight1
+	
+	modifier = {
+		ship_hull_mult = 0.02
+	}
+	
+	potential = {
+		NOT = { has_ethic = ethic_gestalt_consciousness }
+	}
+	
+	weight_modifier = {
+		factor = 3
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+#Protocol: Dedicated Damage Control
+tech_normal_empire_soc_hull_2 = {
+	cost = @tier2cost2
+	area = society
+	tier = 2
+	category = { military_theory }
+	prerequisites = { "tech_combat_computers_1" }
+	weight = @tier2weight1
+	
+	modifier = {
+		ship_hull_mult = 0.02
+	}
+	
+	potential = {
+		NOT = { has_ethic = ethic_gestalt_consciousness }
+	}
+	
+	weight_modifier = {
+		factor = 3
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+#Protocol: Integrated Redemptory Mechanism
+tech_normal_empire_soc_hull_3 = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { military_theory }
+	prerequisites = { "tech_droid_workers" }
+	weight = @tier3weight1
+	
+	modifier = {
+		ship_hull_mult = 0.02
+	}
+	
+	potential = {
+		NOT = { has_ethic = ethic_gestalt_consciousness }
+	}
+	
+	weight_modifier = {
+		factor = 3
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+#Protocol: Crew Enhancement Implementations
+tech_normal_empire_soc_hull_4 = {
+	cost = @tier4cost1
+	area = society
+	tier = 4
+	category = { military_theory }
+	prerequisites = { "tech_gene_expressions" }
+	weight = @tier4weight1
+	
+	modifier = {
+		ship_hull_mult = 0.02
+		ship_experience_gain_mult = 0.25
+	}
+	
+	potential = {
+		NOT = { has_ethic = ethic_gestalt_consciousness }
+	}
+	
+	weight_modifier = {
+		factor = 3
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+#Protocol: Advanced Crew Management
+tech_normal_empire_soc_hull_5 = {
+	cost = @tier4cost3
+	area = society
+	tier = 4
+	category = { military_theory }
+	prerequisites = { "tech_collective_self" }
+	weight = @tier4weight3
+	
+	modifier = {
+		ship_hull_mult = 0.02
+		ship_disengage_chance_mult = 0.10
+	}
+	
+	potential = {
+		NOT = { has_ethic = ethic_gestalt_consciousness }
+	}
+	
+	weight_modifier = {
+		factor = 3
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+#Psionic Damage Suppressor
+tech_psionic_damage_suppressor = {
+	cost = @tier4cost3
+	area = society
+	tier = 4
+	category = { psionics }
+	prerequisites = { "tech_telepathy" }
+	weight = @tier4weight3
+	
+	modifier = {
+		ship_hull_mult = 0.05
+	}
+	
+	potential = {
+		NOT = { has_ethic = ethic_gestalt_consciousness }
+	}
+	
+	weight_modifier = {
+		factor = 3
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			is_militarist = yes
+		}
+		modifier = {
+			factor = 10
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+	}
+}

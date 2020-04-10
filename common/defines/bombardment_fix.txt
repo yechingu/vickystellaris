@@ -1,0 +1,12 @@
+NGameplay = {	
+		ORBITAL_BOMBARDMENT_DAMAGE_MAX_SCALE			= 500		
+		ORBITAL_BOMBARDMENT_COLONY_DMG_SCALE			= 0.02
+		ORBITAL_BOMBARDMENT_PLANET_DMG_SCALE			= 0.004	
+		ORBITAL_BOMBARDMENT_ARMY_DMG_SCALE				= 0.04
+		ORBITAL_BOMBARDMENT_ASSAULT_ARMY_DAMAGE_MULT	= 5.00	# Assault armies take this much more damage from orbital bombardment
+		ORBITAL_BOMBARDMENT_KILL_POP_CHANCE				= 0.3	# Multiplied by stance & damage dealt
+		ORBITAL_BOMBARDMENT_KILL_POP_COOLDOWN			= 1	# Min days between killing pops from bombardment
+		
+		RESOLUTION_VOTE_TIMER = 900					# number of days a resolution will be on the senate floor before being passed/failed
+		SENATE_RECESS_TIMER = 360					# number of days until the next proposed resolution will be put on the floor after the current vote
+}

@@ -1,0 +1,13 @@
+﻿l_english
+ resettlement_allowed:0 "Unrestricted Resettlement"
+ resettlement_allowed_desc:0 "Government controls all housing and reserves authority to resettle Pops without restriction."
+
+ resettlement_compensated:0 "Compensated Resettlement"
+ resettlement_compensated_desc:0 "Although government can resettle Pops when needed, governemnt is required to compensate those who were forced to move."
+
+ resettlement_subsidized:0 "Subsidized Resettlement"
+ resettlement_subsidized_desc:0 "People should never be 'fully' forced to move. We will subsidize those who 'volunteers' for a resttelemt. (Government reserves right to set the resttelemnt quota.)"
+
+ resettlement_not_allowed:0 "Resettlement Prohibited"
+ resettlement_not_allowed_desc:0 "It is people's home after all. No authorities holds right to force people to move."
+ 

@@ -1,0 +1,100 @@
+laborer = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_bio_reprocessing_facilities
+	clothes_texture_index = 2
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+	possible = {
+		or = {
+			has_job = laborer
+			z_pop_job_trigger = yes
+		}
+		owner = { is_fallen_empire = no }
+	}
+	
+	resources = {
+		category = planet_jobs_laborer
+		produces = {
+			alloys = 1
+			consumer_goods = 1
+		}
+		upkeep = {
+			minerals = 3
+		}
+	}
+	
+	country_modifier = {
+		pop_amenities_usage_mult = 0.005
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_policy_flag = economic_policy_demilitarized
+		
+			}
+		}
+		modifier = {
+			trade_value_add = 0.5
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_robot_propaganda_machines
+		}
+		modifier = {
+			pop_government_ethic_attraction = 0.01
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_robot_domestic_protocols
+		}
+		modifier = {
+			pop_amenities_usage_mult = -0.002
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			has_trait = trait_robot_harvesters
+		}
+		modifier = {
+			trade_value_mult = 0.01
+		}
+	}
+	
+	weight = {
+		weight = @clerk_job_weight
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.25
+			OR = {
+				has_trait = trait_strong
+				has_trait = trait_very_strong
+			}
+		}
+		modifier = {
+			factor = 1.25
+			has_trait = trait_strong
+		}
+		modifier = {
+			factor = 15
+			OR = {
+				has_trait = trait_robot_efficient_processors
+			}
+		}
+	}
+}
+

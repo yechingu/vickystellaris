@@ -1,0 +1,15 @@
+﻿l_english:
+ job_laborer:0 "Laborer"
+ job_laborer_plural:0 "Laborers"
+ job_laborer_desc:0 "Laborers works for various industrial fascilities to keep it running. They are not as efficient as more complicated alternatives, but can be recruited in mass."
+ job_laborer_effect_desc:0 "Laborers Produces 1 Consumer Goods and 1 Alloys with cost of 3 Minerals; country's policies may change production details."
+
+ mod_job_laborer_add:0 "$job_laborer$ Jobs"
+ 
+
+ job_free_thinker:0 "Free Thinker"
+ job_free_thinker_plural:0 "Free Thinkers"
+ job_free_thinker_desc:0 "Everyone can be a Karl Marx in a tiny room; offer is availbe for a limited species."
+ 
+ mod_job_free_thinker_add:0 "$job_free_thinker$ Jobs"
+ 
