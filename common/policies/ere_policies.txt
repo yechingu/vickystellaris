@@ -135,18 +135,23 @@ economic_policy = {
 			factor = 1
 			modifier = {
 				factor = 0
-				is_at_war = no
+				recently_lost_war = no
 			}
 			modifier = {
-				factor = 0.25
+				factor = 0
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 20
+				recently_lost_war = yes
+			}
+			modifier = {
+				factor = 100
+				recently_lost_war = yes
 				or = {
 					has_ethic = ethic_militarist
 					has_ethic = ethic_fanatic_militarist
 				}
-			}
-			modifier = {
-				factor = 20
-				is_at_war = yes
 			}
 		}
 	}
@@ -176,7 +181,7 @@ economic_policy = {
 		}
 		
 		AI_weight = {
-			factor = 1
+			factor = 20
 			modifier = {
 				factor = 0.5
 				or = {
@@ -220,13 +225,17 @@ economic_policy = {
 		}
 		
 		AI_weight = {
-			factor = 1
+			factor = 20
 			modifier = {
-				factor = 2
+				factor = 5
 				or = {
 					has_ethic = ethic_militarist
 					has_ethic = ethic_fanatic_militarist
 				}
+			}
+			modifier = {
+				factor = 1000
+				recently_lost_war = yes
 			}
 		}
 	}

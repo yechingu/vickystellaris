@@ -5,3 +5,7 @@
  building_industrial_expanded:0 "Expanded Fringe Industry"
  building_industrial_expanded_desc:0 "By replacing primitive fuel/polymer source with more advanced contemporary alternatives, manufacturers now can support far more production; without needs of cutting workers' hands off, of course."
  
+ habitat_void_dwellers:0 "Habitat"
+ habitat_void_dwellers_DESC:0 "A Habitation Station orbiting an uninhabitable planet, capable of housing a number of §HPops§! and §HBuildings§! away from the surface."
+ habitat_void_dwellers_MEGASTRUCTURE_DETAILS:0 "A Habitation Station orbiting an uninhabitable planet, capable of housing a number of §HPops§! and §HBuildings§! away from the surface."
+ 

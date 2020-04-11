@@ -1,0 +1,21 @@
+﻿l_english:
+ tech_repeatable_improved_damage_control:0 "Improved Damage Control"
+ tech_repeatable_improved_damage_control_desc:0 "Through careful crew enhancement implementations and reformation of management protocols, the aquisition of hull integrity beyond a level that has been previously thought as the limit, is possible."
+ 
+ tech_normal_empire_soc_hull_1:0 "Protocol: In-Void Panic Response"
+ tech_normal_empire_soc_hull_1_desc:0 "Damage Control in Space Warfare is far more challenging than that of in-planet warfare, however it shares quite simillar nature: Do Not Panic. With our space force's recent adaptation in space warfare, we can now actually learn how to keep panic controlled, in space."
+ 
+ tech_normal_empire_soc_hull_2:0 "Protocol: Dedicated Damage Control"
+ tech_normal_empire_soc_hull_2_desc:0 "Just like in-planet warfare, having a dedicated damage control crew is essential for fleet's survival. However, this was quite challenging before the introduction of proper combat management computers. Since we now have free extra crews thanks to recent advancement in combat computer technology, we really should re-introduce teachings from our in-planet history."
+ 
+ tech_normal_empire_soc_hull_3:0 "Protocol: Integrated Redemptroy Mechanism"
+ tech_normal_empire_soc_hull_3_desc:0 "Having machines to deal with many dangerous job has always been a dream for crews: for both in-planet and in-space. Advancement of robotic workers finnaly freed crews from deadly mooring-lines, yet we do not have proper experience for using those machines for In-Void Redemptory Action. Integrating those machines will bring an important improvement for our fleet's hull integrity, without costing crews life in cold and unforgiving space, presumedly."
+ 
+ tech_normal_empire_soc_hull_4:0 "Protocol: Crew Enhancement Implementations"
+ tech_normal_empire_soc_hull_4_desc:0 "War is an extreme situtation that forces all sapient being to go beyond its limit, and such matter is often worse for crews desperatly trying to keep ship in apart. By introducing various enhancement implementations, we can not only make our crew's limit raised, but also can make them to be far more willing to go beyond their limit."
+ 
+ tech_normal_empire_soc_hull_5:0 "Protocol: Advanced Crew Management"
+ tech_normal_empire_soc_hull_5_desc:0 "The Advanced Crew Management, it is no longer a thing from future."
+ 
+ tech_psionic_damage_suppressor:0 "Psionic Damage Suppressor"
+ tech_psionic_damage_suppressor_desc:0 "Having Psionics implemented to our ships to control its damange can dramatically improve our ship's expected hull integrity. We will need to research about how we will apply psionic agents and apparatus, however."

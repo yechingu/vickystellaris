@@ -221,6 +221,28 @@ prosperity = {
 	}
 
 	demand = {
+		title = "FACTION_OFFICIAL_PARTY"
+		unfulfilled_title = "FACTION_OFFICIAL_PARTY"
+		desc = "FACTION_OFFICIAL_PARTY_DESC"
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_parliamentary_system
+			}
+		}
+
+		trigger = {
+			owner = {
+				has_valid_civic = civic_parliamentary_system
+			}
+		}
+	}
+
+	demand = {
 		title = "PROSPERITY_PEACEFUL_APPLICATIONS"
 		unfulfilled_title = "PROSPERITY_NO_PEACEFUL_APPLICATIONS_APPLICATIONS"
 		desc = "PROSPERITY_PEACEFUL_APPLICATIONS_DESC"

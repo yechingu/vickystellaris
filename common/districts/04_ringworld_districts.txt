@@ -698,10 +698,8 @@ district_rw_farming = {
 		upkeep = {
 			trigger = {
 				exists = owner
-					owner = {
-						has_valid_civic = civic_agrarian_idyll
-					}
-				}
+				owner = { has_valid_civic = civic_agrarian_idyll }
+			}
 			energy = @rw_maintenance
 			volatile_motes = 1
 		}

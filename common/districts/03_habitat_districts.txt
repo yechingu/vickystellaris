@@ -31,6 +31,19 @@ district_hab_housing = {
 		potential = {
 			exists = owner
 			owner = {
+				has_origin = origin_void_dwellers
+			}
+		}
+		modifier = {
+			planet_housing_add = 2
+			job_laborer_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
 				has_valid_civic = civic_agrarian_idyll
 			}
 		}
@@ -134,6 +147,20 @@ district_hab_energy = {
 		}
 		upkeep = {
 			energy = @hab_maintenance
+		}
+	}
+
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_origin = origin_void_dwellers
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+			job_technician_add = 1
 		}
 	}
 
@@ -258,6 +285,19 @@ district_hab_science = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_origin = origin_void_dwellers
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+			job_researcher_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
@@ -366,6 +406,19 @@ district_hab_commercial = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
+			owner = {
+				has_origin = origin_void_dwellers
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+			job_clerk_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
 			owner = { is_fallen_empire_spiritualist = no }
 		}
 		modifier = {
@@ -436,6 +489,19 @@ district_hab_mining = {
 		}
 		upkeep = {
 			energy = @hab_maintenance
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_origin = origin_void_dwellers
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+			job_miner_add = 1
 		}
 	}
 
@@ -581,6 +647,19 @@ district_hab_cultural = {
 		planet_housing_add = 3
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_origin = origin_void_dwellers
+			}
+		}
+		modifier = {
+			planet_housing_add = 1
+			job_culture_worker_add = 1
+		}
+	}
+	
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner

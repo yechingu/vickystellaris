@@ -1317,7 +1317,8 @@ ap_universal_transactions = {
 	}
 
 	modifier = {
-		planet_branch_offices_cost_mult = -0.35
+		planet_branch_offices_cost_mult = -0.25
+		planet_branch_offices_influence_cost_mult = -0.25
 		country_trust_cap_add = 50
 	}
 
@@ -1326,6 +1327,6 @@ ap_universal_transactions = {
 	}
 
 	ai_weight = {
-		factor = 1000
+		factor = 10000
 	}
 }

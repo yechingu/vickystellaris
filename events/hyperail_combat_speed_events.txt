@@ -1,52 +1,79 @@
 namespace = hyperail
 
+country_event = {
+	id = hyperail.0
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_owned_ship ={
+			ship_event = {
+				id = hyperail.1
+			}
+			ship_event = {
+				id = hyperail.2
+			}
+			ship_event = {
+				id = hyperail.3
+			}
+		}
+	}
+
+}
+
 ship_event = {
 	id = hyperail.1
 	hide_window = yes
-	
-	trigger = {
-		is_in_combat = yes
-		or = {
-			is_ship_class = shipclass_military
-			is_ship_class = shipclass_military_special
-		}
-		NOT = { has_ship_flag = hyperail_in_battle }
-	}
+	is_triggered_only = yes
 		
 	immediate = {
-		remove_ship_flag = hyperail_not_in_battle
-		remove_modifier = not_in_combat
-		set_ship_flag = hyperail_in_battle
-		add_modifier = { modifier = ship_in_combat }
+		if = {
+			limit = {
+				is_in_combat = yes
+				or = {
+					is_ship_class = shipclass_military
+					is_ship_class = shipclass_military_special
+				}
+				NOT = { has_ship_flag = hyperail_in_battle }
+			}
+			remove_ship_flag = hyperail_not_in_battle
+			remove_modifier = not_in_combat
+			set_ship_flag = hyperail_in_battle
+			add_modifier = { modifier = ship_in_combat }
+		}
 	}
 }
 
 ship_event = {
 	id = hyperail.2
 	hide_window = yes
+	is_triggered_only = yes
 	
-	trigger = {
-		is_in_combat = no
-		has_ship_flag = hyperail_in_battle
-	}
-		
 	immediate = {
-		remove_ship_flag = hyperail_in_battle 
-		remove_modifier = ship_in_combat
+		if = {
+			limit = {
+				is_in_combat = no
+			has_ship_flag = hyperail_in_battle
+			}
+			remove_ship_flag = hyperail_in_battle 
+			remove_modifier = ship_in_combat
+		}
 	}
 }
 
 ship_event = {
 	id = hyperail.3
 	hide_window = yes
-	
-	trigger = {
-		is_in_combat = no
-		NOT = { has_ship_flag = hyperail_not_in_battle }
-	}
+	is_triggered_only = yes
 	
 	immediate = {
-		set_ship_flag = hyperail_not_in_battle
-		add_modifier = { modifier = not_in_combat }
+		if = {
+			limit = {
+				is_in_combat = no
+				NOT = { has_ship_flag = hyperail_not_in_battle }
+			}
+			set_ship_flag = hyperail_not_in_battle
+			add_modifier = { modifier = not_in_combat }
+		}
 	}
 }

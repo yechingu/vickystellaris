@@ -13,10 +13,25 @@ country_event = {
 			every_owned_pop = {
 				limit = {
 					has_job = laborer
+					not = {
+						has_modifier = pop_partial_mobilization_impact
+					}
 				}
 				add_modifier = {
 					modifier = pop_partial_mobilization_impact
 				}
+				remove_modifier = 
+					"pop_demilitarized_economy_impact"
+				remove_modifier = 
+					"pop_war_economy_impact"
+				remove_modifier = 
+					"pop_total_mobilization_impact"
+				remove_modifier = 
+					"pop_desperate_measures_impact"
+				remove_modifier = 
+					"pop_civilian_economy_impact"
+			}
+			every_owned_pop = {
 				remove_modifier = 
 					"pop_demilitarized_economy_impact"
 				remove_modifier = 
@@ -45,10 +60,25 @@ country_event = {
 			every_owned_pop = {
 				limit = {
 					has_job = laborer
+					not = {
+						has_modifier = pop_war_economy_impact
+					}
 				}
 				add_modifier = {
 					modifier = pop_war_economy_impact
 				}
+				remove_modifier = 
+					"pop_demilitarized_economy_impact"
+				remove_modifier = 
+					"pop_partial_mobilization_impact"
+				remove_modifier = 
+					"pop_total_mobilization_impact"
+				remove_modifier = 
+					"pop_desperate_measures_impact"
+				remove_modifier = 
+					"pop_civilian_economy_impact"
+			}
+			every_owned_pop = {
 				remove_modifier = 
 					"pop_demilitarized_economy_impact"
 				remove_modifier = 
@@ -77,10 +107,25 @@ country_event = {
 			every_owned_pop = {
 				limit = {
 					has_job = laborer
+					not = {
+						has_modifier = pop_total_mobilization_impact
+					}
 				}
 				add_modifier = {
 					modifier = pop_total_mobilization_impact
 				}
+				remove_modifier = 
+					"pop_demilitarized_economy_impact"
+				remove_modifier = 
+					"pop_partial_mobilization_impact"
+				remove_modifier = 
+					"pop_war_economy_impact"
+				remove_modifier = 
+					"pop_desperate_measures_impact"
+				remove_modifier = 
+					"pop_civilian_economy_impact"
+			}
+			every_owned_pop = {
 				remove_modifier = 
 					"pop_demilitarized_economy_impact"
 				remove_modifier = 
@@ -109,10 +154,25 @@ country_event = {
 			every_owned_pop = {
 				limit = {
 					has_job = laborer
+					not = {
+						has_modifier = pop_desperate_measures_impact
+					}
 				}
 				add_modifier = {
 					modifier = pop_desperate_measures_impact
 				}
+				remove_modifier = 
+					"pop_demilitarized_economy_impact"
+				remove_modifier = 
+					"pop_partial_mobilization_impact"
+				remove_modifier = 
+					"pop_war_economy_impact"
+				remove_modifier = 
+					"pop_total_mobilization_impact"
+				remove_modifier = 
+					"pop_civilian_economy_impact"
+			}
+			every_owned_pop = {
 				remove_modifier = 
 					"pop_demilitarized_economy_impact"
 				remove_modifier = 
@@ -141,10 +201,25 @@ country_event = {
 			every_owned_pop = {
 				limit = {
 					has_job = laborer
+					not = {
+						has_modifier = pop_civilian_economy_impact
+					}
 				}
 				add_modifier = {
 					modifier = pop_civilian_economy_impact
 				}
+				remove_modifier = 
+					"pop_demilitarized_economy_impact"
+				remove_modifier = 
+					"pop_partial_mobilization_impact"
+				remove_modifier = 
+					"pop_war_economy_impact"
+				remove_modifier = 
+					"pop_total_mobilization_impact"
+				remove_modifier = 
+					"pop_desperate_measures_impact"
+			}
+			every_owned_pop = {
 				remove_modifier = 
 					"pop_demilitarized_economy_impact"
 				remove_modifier = 
@@ -171,22 +246,37 @@ country_event = {
 				has_policy_flag = economic_policy_demilitarized
 			}
 			every_owned_pop = {
-			limit = {
-				has_job = laborer
+				limit = {
+					has_job = laborer
+					not = {
+						has_modifier = pop_demilitarized_economy_impact
+					}
+				}
+				add_modifier = {
+					modifier = pop_demilitarized_economy_impact
+				}
+				remove_modifier = 
+					"pop_civilian_economy_impact"
+				remove_modifier = 
+					"pop_partial_mobilization_impact"
+				remove_modifier = 
+					"pop_war_economy_impact"
+				remove_modifier = 
+					"pop_total_mobilization_impact"
+				remove_modifier = 
+					"pop_desperate_measures_impact"
 			}
-			add_modifier = {
-				modifier = pop_demilitarized_economy_impact
-			}
-			remove_modifier = 
-				"pop_civilian_economy_impact"
-			remove_modifier = 
-				"pop_partial_mobilization_impact"
-			remove_modifier = 
-				"pop_war_economy_impact"
-			remove_modifier = 
-				"pop_total_mobilization_impact"
-			remove_modifier = 
-				"pop_desperate_measures_impact"
+			every_owned_pop = {
+				remove_modifier = 
+					"pop_civilian_economy_impact"
+				remove_modifier = 
+					"pop_partial_mobilization_impact"
+				remove_modifier = 
+					"pop_war_economy_impact"
+				remove_modifier = 
+					"pop_total_mobilization_impact"
+				remove_modifier = 
+					"pop_desperate_measures_impact"
 			}
 		}
 	}
@@ -218,6 +308,20 @@ country_event = {
 				"pop_total_mobilization_impact"
 			remove_modifier = 
 				"pop_desperate_measures_impact"
+			}
+			every_owned_pop = {
+				remove_modifier = 
+					"pop_demilitarized_economy_impact"
+				remove_modifier = 
+						"pop_civilian_economy_impact"
+				remove_modifier = 
+						"pop_partial_mobilization_impact"
+				remove_modifier = 
+						"pop_war_economy_impact"
+				remove_modifier = 
+					"pop_total_mobilization_impact"
+				remove_modifier = 
+					"pop_desperate_measures_impact"
 			}
 		}
 	}

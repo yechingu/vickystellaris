@@ -179,7 +179,7 @@ technician = {
 			OR = {
 				has_trait = trait_robust
 				has_trait = trait_robot_efficient_processors
-				has_trait = trait_igenious
+				has_trait = trait_ingenious
 			}
 		}
 		modifier = {
@@ -751,6 +751,10 @@ soldier = {
 		country_naval_cap_add = 4
 	}
 
+	planet_modifier = {
+		planet_amenities_add = 1
+	}
+
 	triggered_country_modifier = {
 		potential = {
 			exists = planet
@@ -765,7 +769,7 @@ soldier = {
 	}
 
 	pop_modifier = {
-		pop_defense_armies_add = 3
+		pop_defense_armies_add = 4
 	}
 
 	resources = {
@@ -788,6 +792,31 @@ soldier = {
 		}
 		modifier = {
 			planet_stability_add = 5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_citizen_service
+			}
+		}
+		modifier = {
+			planet_amenities_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_private_military_companies
+			}
+		}
+		modifier = {
+			trade_value_add = 2
+			planet_amenities_add = 1
 		}
 	}
 

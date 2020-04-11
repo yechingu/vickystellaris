@@ -1,0 +1,23 @@
+on_entering_battle = {
+	events = {
+		hyperail.0
+	}
+}
+
+on_space_battle_won = {
+	events = {
+		hyperail.0
+	}
+}
+
+on_space_battle_lost = {
+	events = {
+		hyperail.0
+	}
+}
+
+on_monthly_pulse_country = {
+	events = {
+		hyperail.0
+	}
+}

@@ -92,6 +92,28 @@ xenoist = {
 	}
 
 	demand = {
+		title = "FACTION_OFFICIAL_PARTY"
+		unfulfilled_title = "FACTION_OFFICIAL_PARTY"
+		desc = "FACTION_OFFICIAL_PARTY_DESC"
+
+		fulfilled_effect = 10
+		unfulfilled_effect = 0
+
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_parliamentary_system
+			}
+		}
+
+		trigger = {
+			owner = {
+				has_valid_civic = civic_parliamentary_system
+			}
+		}
+	}
+
+	demand = {
 		title = "FACTION_OUTRAGED_GC"
 		unfulfilled_title = "FACTION_OUTRAGED_GC"
 		desc = "FACTION_OUTRAGED_GC_DESC"

@@ -9,3 +9,15 @@ on_policy_changed = {
 		hnm_economic_policy_effector_event.7
 	}
 }
+
+on_monthly_pulse_country = {
+	events = {
+		hnm_economic_policy_effector_event.1
+		hnm_economic_policy_effector_event.2
+		hnm_economic_policy_effector_event.3
+		hnm_economic_policy_effector_event.4
+		hnm_economic_policy_effector_event.5
+		hnm_economic_policy_effector_event.6
+		hnm_economic_policy_effector_event.7
+	}
+}
