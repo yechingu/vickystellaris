@@ -91,7 +91,8 @@ district_city = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { has_non_swapped_tradition = tr_prosperity_public_works 
+			owner = { 
+				has_non_swapped_tradition = tr_prosperity_public_works 
 				NOT = { 
 					has_valid_civic = civic_agrarian_idyll 
 				}

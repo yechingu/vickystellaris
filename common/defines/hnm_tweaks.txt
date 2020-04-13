@@ -1,0 +1,18 @@
+NAI = {
+	STARBASE_COLONY_SCORE = 2.5
+	STARBASE_HABITABLE_PLANET_SCORE = 1.5
+	STARBASE_MEGASTRUCTURE_SCORE = 1
+	STARBASE_BYPASS_SCORE = 100
+	STARBASE_CHOKEPOINT_SCORE = 20
+	STARBASE_HAZARD_CHOKEPOINT_SCORE_MULT = 100
+}
+
+NGameplay = {
+	STARBASE_CAPACITY_MAX									= 999	# Max value of Starbase Capacity
+	STARBASE_CAPACITY_BASE 									= 5		# Base value of Starbase Capacity
+	STARBASE_CAPACITY_SYSTEM_MULT							= 0.2	# Mult value of Starbase Capacity for each owned system
+	STARBASE_CAPACITY_POP_MULT								= 0.05	# Mult value of Starbase Capacity for each Pop
+	
+	RESOLUTION_VOTE_TIMER = 900					# number of days a resolution will be on the senate floor before being passed/failed
+	SENATE_RECESS_TIMER = 360					# number of days until the next proposed resolution will be put on the floor after the current vote
+}

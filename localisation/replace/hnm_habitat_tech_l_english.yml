@@ -1,0 +1,7 @@
+﻿l_english:
+ tech_habitat_2:0 "Improved Habitats"
+ tech_habitat_2_dec:0 "With recent advancement of Voidcraft, we can improve our Habitats' life-support system to make them less bulky, increasing housing space of the Habitat."
+ tech_habitat_3:0 "Advanced Habitats"
+ tech_habitat_3_desc:0 "With experience of installing large-scale deep space installations, we learned how to integrate the life-supprot system of the deep space installtions into its base structure. Applying such improvement into our Habitats can further increase our Habitats' housing capacity."
+ district_habitat_tech_effect:0 "Habitat Districts Housing: +1"
+ 
