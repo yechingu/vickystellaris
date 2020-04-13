@@ -347,3 +347,22 @@ trait_robot_high_bandwidth = {
 		species_empire_size_mult = 0.10
 	}
 }
+
+trait_robot_void_dwellers = {
+	cost = 0
+
+	allowed_archetypes = { ROBOT }
+	species_potential_add = {
+		exists = from
+		from = {
+			has_origin = origin_void_dwellers
+		}
+	}
+	modifier = {
+		pop_assembly_speed = -0.1
+		planet_jobs_specialist_produces_mult = 0.15
+		planet_jobs_worker_produces_mult = 0.15
+		pop_housing_usage_mult = -0.1
+		planet_pop_assemblers_upkeep_mult = 0.20
+	}
+}

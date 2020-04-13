@@ -1,0 +1,215 @@
+namespace = ai_base_tech_event
+
+country_event = {
+	id = ai_base_tech_event.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				is_ai = yes
+			}
+			add_tech_progress = {
+				tech = tech_mountain_range progress = 0.75
+			}
+			add_tech_progress = {
+				tech = tech_volcano progress = 0.75
+			}
+			add_tech_progress = {
+				tech = tech_dangerous_wildlife progress = 0.75
+			}
+			add_tech_progress = {
+				tech = tech_dense_jungle progress = 0.75
+			}
+			add_tech_progress = {
+				tech = tech_quicksand_basin progress = 0.75
+			}
+			add_tech_progress = {
+				tech = tech_noxious_swamp progress = 0.75
+			}
+			add_tech_progress = {
+				tech = tech_massive_glacier progress = 0.75
+			}
+			add_tech_progress = {
+				tech = tech_toxic_kelp progress = 0.75
+			}
+			add_tech_progress = {
+				tech = tech_deep_sinkhole progress = 0.75
+			}
+			add_tech_progress = {
+				tech = tech_mine_betharian progress = 0.75
+			}
+			add_tech_progress = {
+				tech = tech_volatile_motes progress = 0.75
+			}
+			add_tech_progress = {
+				tech = tech_exotic_gases progress = 0.75
+			}
+			add_tech_progress = {
+				tech = tech_rare_crystals progress = 0.75
+			}
+			add_tech_progress = {
+				tech = tech_hydroponics progress = 0.75
+			}
+			add_tech_progress = {
+				tech = tech_alien_life_studies progress = 0.75
+			}
+			add_research_option = tech_mountain_range
+			add_research_option = tech_volcano
+			add_research_option = tech_dangerous_wildlife
+			add_research_option = tech_dense_jungle
+			add_research_option = tech_quicksand_basin
+			add_research_option = tech_noxious_swamp
+			add_research_option = tech_massive_glacier
+			add_research_option = tech_toxic_kelp
+			add_research_option = tech_deep_sinkhole
+			add_research_option = tech_mine_betharian
+			add_research_option = tech_volatile_motes
+			add_research_option = tech_exotic_gases
+			add_research_option = tech_rare_crystals
+			add_research_option = tech_hydroponics
+			add_research_option = tech_alien_life_studies
+		}
+	}
+}
+
+country_event = {
+	id = ai_base_tech_event.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				is_ai = no
+				NOT = {
+					has_origin = origin_shattered_ring
+				}
+			}
+			add_tech_progress  = {
+				tech = tech_mountain_range progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_volcano progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_dangerous_wildlife progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_dense_jungle progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_quicksand_basin progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_noxious_swamp progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_massive_glacier progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_toxic_kelp progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_deep_sinkhole progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_mine_betharian progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_volatile_motes progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_exotic_gases progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_rare_crystals progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_hydroponics progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_alien_life_studies progress = 0.25
+			}
+			add_research_option = tech_mountain_range
+			add_research_option = tech_volcano
+			add_research_option = tech_dangerous_wildlife
+			add_research_option = tech_dense_jungle
+			add_research_option = tech_quicksand_basin
+			add_research_option = tech_noxious_swamp
+			add_research_option = tech_massive_glacier
+			add_research_option = tech_toxic_kelp
+			add_research_option = tech_deep_sinkhole
+			add_research_option = tech_mine_betharian
+			add_research_option = tech_volatile_motes
+			add_research_option = tech_exotic_gases
+			add_research_option = tech_rare_crystals
+			add_research_option = tech_hydroponics
+			add_research_option = tech_alien_life_studies
+		}
+	}
+}
+
+country_event = {
+	id = ai_base_tech_event.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				is_ai = no
+				has_origin = origin_shattered_ring
+			}
+			add_tech_progress  = {
+				tech = tech_mountain_range progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_volcano progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_dangerous_wildlife progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_dense_jungle progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_quicksand_basin progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_noxious_swamp progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_massive_glacier progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_toxic_kelp progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_deep_sinkhole progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_mine_betharian progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_hydroponics progress = 0.25
+			}
+			add_tech_progress  = {
+				tech = tech_alien_life_studies progress = 0.25
+			}
+			add_research_option = tech_mountain_range
+			add_research_option = tech_volcano
+			add_research_option = tech_dangerous_wildlife
+			add_research_option = tech_dense_jungle
+			add_research_option = tech_quicksand_basin
+			add_research_option = tech_noxious_swamp
+			add_research_option = tech_massive_glacier
+			add_research_option = tech_toxic_kelp
+			add_research_option = tech_deep_sinkhole
+			add_research_option = tech_mine_betharian
+			add_research_option = tech_hydroponics
+			add_research_option = tech_alien_life_studies
+		}
+	}
+}

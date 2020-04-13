@@ -143,7 +143,7 @@ civic_private_military_companies = {
 		army_damage_mult = 0.2
 		armies_upkeep_mult = -0.25
 		planet_army_build_speed_mult = 0.25
-		army_collateral_damage = 0.25
+		army_collateral_damage_mult = 0.25
 	}
 }
 

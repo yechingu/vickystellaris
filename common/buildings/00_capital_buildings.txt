@@ -1405,6 +1405,14 @@ building_hab_capital = {
 	resources = {
 		category = planet_buildings
 		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					not = {
+						has_origin = origin_void_dwellers
+					}
+				}
+			}
 			energy = 3
 			alloys = 5
 		}
