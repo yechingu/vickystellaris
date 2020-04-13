@@ -24,8 +24,10 @@ habitat_0 = {
 			has_civic = civic_diadochi
 			has_civic = civic_great_khans_legacy
 			has_country_flag = democratic_khanate_flag
+			}
+		not = { 
+			has_origin = origin_void_dwellers
 		}
-		not = { has_origin = origin_void_dwellers }
 	}
 
 	possible = {
@@ -36,11 +38,15 @@ habitat_0 = {
 		}
 		
 		###_z performance2
-		NAND = {
-			is_ai = yes
+		from = {
 			OR = {
-				has_global_flag = z_pf2_ai_habitat_ban		#_ai禁用falg
-				has_country_flag = z_pf2_country_habitat_cd
+				NOT = {
+					is_ai = yes
+				}
+				OR = {
+					has_global_flag = z_pf2_ai_habitat_ban		#_ai禁用falg
+					has_country_flag = z_pf2_country_habitat_cd
+				}
 			}
 		}
 	}
@@ -97,10 +103,11 @@ habitat_0 = {
 	}
 
 	# root = system
-	# from = country
+	# from = country	
 	ai_weight = {
 		factor = 5
-
+		
+		###_z performance2
 		modifier = {
 			factor = 0
 			OR = {
@@ -119,12 +126,12 @@ habitat_0 = {
 				from = { has_country_flag = z_pf2_country_habitat_cd }
 			}
 		}
-
+		
 		modifier = {
 			factor = 0
 			starbase = { NOT = { has_starbase_size >= starbase_starport } }
 		}
-
+		
 		modifier = {
 			factor = 0
 			any_system_planet = {
@@ -156,10 +163,10 @@ habitat_0 = {
 			}
 		}
 	}
-
+	
 	on_build_start = {}
 	on_build_cancel = {}
-
+	
 	on_build_complete = {
 		###_z performance2
 		from = { country_event =  { id = z_performance_misc.22 days = 1 } }
@@ -459,10 +466,8 @@ habitat_void_dwellers = {
 	construction_blocked_by_others = no
 
 	potential = {
-		and = {
-			has_technology = tech_habitat_1
-			has_origin = origin_void_dwellers
-		}
+		has_technology = tech_habitat_1
+		has_origin = origin_void_dwellers
 	}
 
 	possible = {
@@ -473,11 +478,15 @@ habitat_void_dwellers = {
 		}
 		
 		###_z performance2
-		NAND = {
-			is_ai = yes
+		from = {
 			OR = {
-				has_global_flag = z_pf2_ai_habitat_ban		#_ai禁用falg
-				has_country_flag = z_pf2_country_habitat_cd
+				NOT = {
+					is_ai = yes
+				}
+				OR = {
+					has_global_flag = z_pf2_ai_habitat_ban		#_ai禁用falg
+					has_country_flag = z_pf2_country_habitat_cd
+				}
 			}
 		}
 	}
@@ -534,10 +543,11 @@ habitat_void_dwellers = {
 	}
 
 	# root = system
-	# from = country
+	# from = country	
 	ai_weight = {
 		factor = 5
-
+		
+		###_z performance2
 		modifier = {
 			factor = 0
 			OR = {
@@ -556,12 +566,12 @@ habitat_void_dwellers = {
 				from = { has_country_flag = z_pf2_country_habitat_cd }
 			}
 		}
-
+		
 		modifier = {
 			factor = 0
 			starbase = { NOT = { has_starbase_size >= starbase_starport } }
 		}
-
+		
 		modifier = {
 			factor = 0
 			any_system_planet = {
@@ -593,13 +603,16 @@ habitat_void_dwellers = {
 			}
 		}
 	}
-
+	
 	on_build_start = {}
 	on_build_cancel = {}
-
+	
 	on_build_complete = {
 		###_z performance2
-		from = { country_event =  { id = z_performance_misc.22 days = 1 } }
+		from = { 
+			country_event =  { 
+				id = z_performance_misc.22 days = 1 } 
+			}
 		
 		spawn_planet = {
 			class = "pc_habitat"

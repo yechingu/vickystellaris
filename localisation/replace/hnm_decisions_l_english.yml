@@ -11,4 +11,11 @@
  planet_emigration_push_1:0 "Emigration Encouragement Level 1"
  planet_emigration_push_2:0 "Emigration Encouragement Level 2"
  planet_emigration_push_3:0 "Emigration Encouragement Level 3"
+
+ decision_planet_utopian_benefit:0 "Introduce Increased Utopian Benefit"
+ decision_planet_utopian_benefit_desc:0 "Introducing Increased Benefits for Pops with Utopian Living Standard can prevent them from becomming Unemployed. However, this will significantly increase Upkeep costs of Pops. (Unemployed Pops with Utopian Living Standard will be assigned to 'Free Thinker' Jobs, and behave less unproductivly. This also can help removing annoying 'Unemployment' pop ups.)"
+
+ planet_uptopian_benefit:0 "Increased Utopian Benefit"
+ planet_uptopian_benefit_desc:0 "Utopian Benefit has been increased in this planet to suppress unemployment issues."
+
  

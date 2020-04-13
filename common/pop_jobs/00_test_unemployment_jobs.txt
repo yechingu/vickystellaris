@@ -1,0 +1,44 @@
+free_thinker = {
+	category = worker
+	is_capped_by_modifier = no
+	building_icon = building_luxury_residence
+	clothes_texture_index = 2
+
+	possible_pre_triggers = {
+		is_enslaved = no
+		has_planet = yes
+	}
+
+	possible = {
+		planet = { has_modifier = planet_uptopian_benefit }
+		has_living_standard = { 
+			type = living_standard_utopian
+		}
+	}
+	
+	resources = {
+		category = planet_jobs_free_thinker
+		produces = {
+			physics_research = 3
+			engineering_research = 3
+			society_research = 3
+			unity = 3
+		}
+	}
+	
+	triggered_pop_modifier = {
+		potential = {
+			is_organic_species = yes
+		}
+		pop_housing_usage_add = -0.25
+		pop_amenities_usage_add = 0.25
+	}
+	
+	planet_modifier = {
+		planet_pops_upkeep_mult = 0.010
+	}
+	
+	weight = {
+		weight = @special_job_weight
+	}
+}

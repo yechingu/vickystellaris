@@ -141,13 +141,6 @@ tech_habitat_2 = {
 		}
 	}
 
-	prereqfor_desc = {
-		ship = {
-			title = "allow_habitats"
-			desc = "habitat_0_MEGASTRUCTURE_DETAILS"
-		}
-	}
-
 	ai_weight = {
 		factor = 1
 		modifier = {
@@ -222,14 +215,7 @@ tech_habitat_3 = {
 			}
 		}
 	}
-
-	prereqfor_desc = {
-		ship = {
-			title = "allow_habitats"
-			desc = "habitat_0_MEGASTRUCTURE_DETAILS"
-		}
-	}
-
+	
 	ai_weight = {
 		factor = 1
 		modifier = {

@@ -9,7 +9,7 @@
 
  job_free_thinker:0 "Free Thinker"
  job_free_thinker_plural:0 "Free Thinkers"
- job_free_thinker_desc:0 "Everyone can be a Karl Marx in a tiny room; offer is availbe for a limited species."
+ job_free_thinker_desc:0 "Everyone can be a Karl Marx in a tiny room; offer is availbe for a limited species only."
  
  mod_job_free_thinker_add:0 "$job_free_thinker$ Jobs"
  

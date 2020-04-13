@@ -1,0 +1,60 @@
+decision_planet_utopian_benefit = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_politics
+	
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+		}
+	}
+	
+	potential = {
+		owner = { is_regular_empire = yes }
+		owner = {
+			OR = {
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
+			}
+		}
+	}
+	
+	allow = {
+		NOT = { has_modifier = planet_uptopian_benefit }
+	}	
+	
+	effect = {
+		add_modifier = { modifier = "planet_uptopian_benefit" }
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+decision_planet_utopian_benefit_revoke = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_politics
+	
+	resources = {
+		category = decisions
+		cost = {
+			influence = 50
+		}
+	}
+	
+	potential = {
+		has_modifier = planet_uptopian_benefit
+	}	
+	
+	effect = {
+		remove_modifier = "planet_uptopian_benefit" 
+	}
+	
+	ai_weight = {
+		weight = 100
+	}
+}
+

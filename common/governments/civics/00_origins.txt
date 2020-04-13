@@ -297,7 +297,6 @@ origin_void_dwellers = {
 	}
 
 	modifier = {
-		habitat_cost_mult = -0.5
 		country_starbase_influence_cost_mult = -0.25
 	}
 

@@ -23,3 +23,16 @@ planet_jobs_laborer = {
 		upkeep
 	}
 }
+
+planet_jobs_free_thinker = {
+	icon = "job_free_thinkerr"
+	parent = planet_jobs
+	generate_mult_modifiers = {
+		produces
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
+		upkeep
+	}
+}
