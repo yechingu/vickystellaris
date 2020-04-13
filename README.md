@@ -1,7 +1,7 @@
 # vickystellaris
 Stellaris Victorianization
 
-- Requried Mods
+Requried Mods
  * 00 Performance
  * 00 Performance Plus
  * Glavius's Ultimate AI
