@@ -4,4 +4,19 @@
  tech_habitat_3:0 "Advanced Habitats"
  tech_habitat_3_desc:0 "With experience of installing large-scale deep space installations, we learned how to integrate the life-supprot system of the deep space installtions into its base structure. Applying such improvement into our Habitats can further increase our Habitats' housing capacity."
  district_habitat_tech_effect:0 "Habitat Districts Housing +1"
- 
+
+ expand_habitat_1_tooltip:0 "Increases Habitat Size by 2"
+ expand_habitat_1:0 "Upgrade Habitat"
+ expand_habitat_1_desc:0 "Upgrade Habitat to increase its size by 2"
+ expand_habitat_2:0 "Upgrade Habitat"
+ expand_habitat_2_desc:0 "Upgrade Habitat to increase its size by 2"
+
+ habitat_expanded_1:0 "Habitat Level 2"
+ habitat_expanded_1_desc:0 "This Habitat has been upgraded."
+
+ habitat_expanded_2:0 "Habitat Level 3"
+ habitat_expanded_2_desc:0 "This Habitat has been fully upgraded."
+
+
+
+
