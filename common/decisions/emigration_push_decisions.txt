@@ -15,7 +15,11 @@ decision_planet_emigration_push_1 = {
 	}
 	
 	allow = {
-		NOT = { has_modifier = planet_emigration_push_1 }
+		NOR = { 
+			has_modifier = planet_emigration_push_1 
+			has_modifier = planet_emigration_push_2
+			has_modifier = planet_emigration_push_3
+		}
 	}	
 	
 	effect = {

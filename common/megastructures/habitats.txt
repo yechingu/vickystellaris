@@ -11,8 +11,8 @@ habitat_0 = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 3000
-			influence = 200
+			alloys = 1500
+			influence = 100
 		}
 	}
 	construction_blocks_others = no
@@ -24,9 +24,6 @@ habitat_0 = {
 			has_civic = civic_diadochi
 			has_civic = civic_great_khans_legacy
 			has_country_flag = democratic_khanate_flag
-		}
-		NOT = {
-			has_origin = origin_void_dwellers
 		}
 	}
 
@@ -181,7 +178,7 @@ habitat_0 = {
 			orbit_location = yes
 			orbit_angle_offset = 45
 			orbit_distance_offset = 9.899
-			size = 6
+			size = 4
 			has_ring = no
 			
 			init_effect = {				

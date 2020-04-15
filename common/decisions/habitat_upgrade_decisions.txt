@@ -1,0 +1,107 @@
+expand_habitat_1 = {
+	owned_planets_only = yes
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				owner = {
+					has_origin = origin_void_dwellers
+				}
+			}
+			minerals = 2000
+		}
+		cost = {
+			trigger = {
+				owner = {
+					NOT = {
+						has_origin = origin_void_dwellers
+				
+					}
+				}
+			}
+			alloys = 1500
+			influence = 50
+		}
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_habitat_2
+		}
+		NOT = {
+			has_modifier = habitat_expanded_1
+		}
+	}
+
+	effect = {
+		planet= {
+			add_modifier = {
+				modifier = habitat_expanded_1
+			}
+		}
+		hidden_effect = { change_planet_size = 2 }	
+		custom_tooltip = expand_habitat_1_tooltip
+	}
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			num_pops < 25
+		}
+	}
+}
+
+expand_habitat_2 = {
+	owned_planets_only = yes
+	enactment_time = 360
+	resources = {
+		category = decisions
+		cost = {
+			trigger = {
+				owner = {
+					has_origin = origin_void_dwellers
+				}
+			}
+			minerals = 2000
+		}
+		cost = {
+			trigger = {
+				owner = {
+					NOT = {
+						has_origin = origin_void_dwellers
+				
+					}
+				}
+			}
+			alloys = 1500
+			influence = 50
+		}
+	}
+	potential = {
+		exists = owner
+		owner = {
+			has_technology = tech_habitat_3
+		}
+		NOT = {
+			has_modifier = habitat_expanded_2
+		}
+	}
+
+	effect = {
+		planet= {
+			add_modifier = {
+				modifier = habitat_expanded_2
+			}
+		}
+		hidden_effect = { change_planet_size = 2 }	
+		custom_tooltip = expand_habitat_1_tooltip
+	}
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			num_pops < 35
+		}
+	}
+}
