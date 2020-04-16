@@ -131,8 +131,7 @@ imperialist = {
 		desc = "IMPERIALIST_PHILOSOPHY_DESC"
 
 		unfulfilled_effect = -30
-		fulfilled_effect = 0.001
-
+		fulfilled_effect = 0
 		potential = {
 			exists = owner
 			owner = {
@@ -160,7 +159,7 @@ imperialist = {
 		desc = "IMPERIALIST_CONQUEST_DESC"
 
 		fulfilled_effect = 10
-		unfulfilled_effect = -0.001
+		unfulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -186,7 +185,7 @@ imperialist = {
 		desc = "SUPREMACIST_FANATIC_PURIFIERS_DESC"
 
 		fulfilled_effect = 10
-		unfulfilled_effect = -0.001
+		unfulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -239,7 +238,7 @@ imperialist = {
 		desc = "IMPERIALIST_RIVALS_DESC2"
 
 		fulfilled_effect = 10
-		unfulfilled_effect = -0.001
+		unfulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -279,7 +278,7 @@ imperialist = {
 		desc = "IMPERIALIST_RIVALS_DESC3"
 
 		fulfilled_effect = 15
-		unfulfilled_effect = -0.001
+		unfulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -313,7 +312,7 @@ imperialist = {
 		desc = "IMPERIALIST_OVERLORD_DESC"
 
 		fulfilled_effect = 5
-		unfulfilled_effect = -0.001
+		unfulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -335,8 +334,8 @@ imperialist = {
 		unfulfilled_title = "IMPERIALIST_NOT_UNDERLING"
 		desc = "IMPERIALIST_UNDERLING_DESC"
 
-		unfulfilled_effect = -25
-		fulfilled_effect = 0.001
+		unfulfilled_effect = -20
+		fulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -358,7 +357,7 @@ imperialist = {
 		desc = "IMPERIALIST_SLAYER_DESC"
 
 		fulfilled_effect = 10
-		unfulfilled_effect = -0.001
+		unfulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -397,7 +396,7 @@ imperialist = {
 		desc = "IMPERIALIST_MILITARY_APPLICATIONS_DESC"
 
 		fulfilled_effect = 5
-		unfulfilled_effect = -0.001
+		unfulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -429,7 +428,7 @@ imperialist = {
 		desc = "IMPERIALIST_PEACEFUL_APPLICATIONS_DESC"
 
 		unfulfilled_effect = -5
-		fulfilled_effect = 0.001
+		fulfilled_effect = 5
 
 		potential = {
 			exists = owner
@@ -463,7 +462,7 @@ imperialist = {
 		desc = "STRONG_DIPLO_STANCE_DESC"
 
 		fulfilled_effect = 10
-		unfulfilled_effect = -0.001
+		unfulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -492,7 +491,7 @@ imperialist = {
 		unfulfilled_title = "WEAK_DIPLO_STANCE"
 		desc = "WEAK_DIPLO_STANCE_DESC"
 
-		fulfilled_effect = 0.01
+		fulfilled_effect = 0
 		unfulfilled_effect = -10
 
 		potential = {

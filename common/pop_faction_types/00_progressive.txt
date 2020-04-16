@@ -149,9 +149,7 @@ progressive = {
 
 		trigger = {
 			owner = {
-				NOT = {
-					has_authority = auth_democratic
-				}
+				has_authority = auth_democratic
 			}
 		}
 	}

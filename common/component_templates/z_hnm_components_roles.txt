@@ -1,0 +1,125 @@
+@cost0 = 0
+@cost1 = 5
+@cost2 = 10
+@cost3 = 20
+
+@power0 = -5
+@power1 = -10
+@power2 = -15
+@power3 = -25
+
+
+################
+# Special
+################
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_SCIENCE"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = @power0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost0
+		}
+	}
+	ship_modifier = {
+		ship_sensor_range_add = 3
+		ship_emergency_ftl_min_days_mult = -1.0
+		ship_disengage_chance_mult = 2.0
+		ship_hull_regen_add_static = 0.5
+		ship_armor_regen_add_static = 0.5
+		ship_windup_mult = -1.0
+	}
+	ship_behavior = "colossus"
+
+	class_restriction = {
+		shipclass_science_ship
+	}
+	size_restriction = {
+		science
+	}
+	component_set = "combat_computers"
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_CIVILIAN"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = @power0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 20
+		}
+	}
+	class_restriction = {
+		shipclass_constructor
+		shipclass_colonizer
+	}
+	size_restriction = {
+		constructor
+		colonizer
+		lithoid_colonizer
+		sponsored_colonizer
+	}
+	ship_behavior = "stellarite_default"
+
+	ship_modifier = {
+		ship_emergency_ftl_min_days_mult = -1.0
+		ship_disengage_chance_mult = 1.0
+		ship_hull_regen_add_static = 0.5
+		ship_armor_regen_add_static = 0.5
+		ship_windup_mult = -0.5
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+utility_component_template = {
+	key = "COMBAT_COMPUTER_TRANSPORT"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	power = @power0
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cost0
+		}
+	}
+	ship_modifier = {
+		ship_sensor_range_add = 3
+		ship_emergency_ftl_min_days_mult = -1.0
+		ship_disengage_chance_mult = 2.0
+		ship_hull_regen_add_static = 0.5
+		ship_armor_regen_add_static = 0.5
+		ship_emergency_ftl_min_days_mult = -0.75
+		ship_disengage_chance_mult = 2.0
+		ship_hull_regen_add_static = 0.5
+		ship_armor_regen_add_static = 0.5
+		ship_windup_mult = -0.25
+	}
+	ship_behavior = "colossus"
+
+	class_restriction = {
+		shipclass_transport
+	}
+	size_restriction = {
+		transport
+	}
+	component_set = "combat_computers"
+
+	ai_weight = {
+		weight = 100
+	}
+}

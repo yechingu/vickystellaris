@@ -1,0 +1,390 @@
+# Icons set here are the ones show in the actual slot. The reason is so that we can support different icons for different sizes. 
+#############
+#	POWER	#
+#############
+
+@platform_power_1 = 200
+@platform_power_2 = 260
+@platform_power_3 = 340
+@platform_power_4 = 440
+@platform_power_5 = 575
+@platform_power_6 = 750
+
+@medium_platform_power_1 = 625
+@medium_platform_power_2 = 1250
+@medium_platform_power_3 = 1600
+@medium_platform_power_4 = 1875
+@medium_platform_power_5 = 2200
+@medium_platform_power_6 = 2500
+
+@large_platform_power_1 = 1100
+@large_platform_power_2 = 1450
+@large_platform_power_3 = 1900
+@large_platform_power_4 = 2500
+@large_platform_power_5 = 3200
+@large_platform_power_6 = 4200
+
+#############
+#	COST	#
+#############
+
+@medium_platform_cost_1 = 30
+@medium_platform_cost_2 = 40
+@medium_platform_cost_3 = 55
+@medium_platform_cost_4 = 70
+@medium_platform_cost_5 = 85
+@medium_platform_cost_6 = 100
+
+@large_platform_cost_1 = 60
+@large_platform_cost_2 = 80
+@large_platform_cost_3 = 110
+@large_platform_cost_4 = 140
+@large_platform_cost_5 = 170
+@large_platform_cost_6 = 200
+
+####
+# Small REactors #
+####
+
+
+#############
+# Medium REACTORS #
+#############
+
+########################
+# Fission Reactors
+########################
+
+utility_component_template = {
+	key = "MPLATFORM_FISSION_REACTOR"
+	size = large
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	power = @medium_platform_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @medium_platform_cost_1
+		}
+	}
+
+	prerequisites = { "tech_fission_power" }
+	component_set = "power_core"
+	size_restriction = { military_station_medium }
+	upgrades_to = "MPLATFORM_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+########################
+# Fusion Reactors
+########################
+
+utility_component_template = {
+	key = "MPLATFORM_FUSION_REACTOR"
+	size = large
+	icon = "GFX_ship_part_reactor_2"
+	icon_frame = 1
+	power = @medium_platform_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @medium_platform_cost_2
+		}
+	}
+
+	prerequisites = { "tech_fusion_power" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = { military_station_medium }
+	upgrades_to = "MPLATFORM_COLD_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 20
+	}
+}
+
+########################
+# Cold Fusion Reactors
+########################
+
+utility_component_template = {
+	key = "MPLATFORM_COLD_FUSION_REACTOR"
+	size = large
+	icon = "GFX_ship_part_reactor_3"
+	icon_frame = 1
+	power = @medium_platform_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @medium_platform_cost_3
+		}
+	}
+
+	prerequisites = { "tech_cold_fusion_power" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = { military_station_medium }
+	upgrades_to = "MPLATFORM_ANTIMATTER_REACTOR"
+
+	ai_weight = {
+		weight = 30
+	}
+}
+
+########################
+# Antimatter Reactors
+########################
+
+utility_component_template = {
+	key = "MPLATFORM_ANTIMATTER_REACTOR"
+	size = large
+	icon = "GFX_ship_part_reactor_4"
+	icon_frame = 1
+	power = @medium_platform_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @medium_platform_cost_4
+		}
+	}
+
+	prerequisites = { "tech_antimatter_power" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = { military_station_medium }
+	upgrades_to = "MPLATFORM_ZERO_POINT_REACTOR"
+
+	ai_weight = {
+		weight = 40
+	}
+}
+
+########################
+# Zero-Point Reactors
+########################
+
+utility_component_template = {
+	key = "MPLATFORM_ZERO_POINT_REACTOR"
+	size = large
+	icon = "GFX_ship_part_reactor_5"
+	icon_frame = 1
+	power = @medium_platform_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @medium_platform_cost_5
+		}
+	}
+
+	prerequisites = { "tech_zero_point_power" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = { military_station_medium }
+	upgrades_to = "MPLATFORM_DARK_MATTER_REACTOR"
+
+	ai_weight = {
+		weight = 50
+	}
+}
+
+####################
+# Engimatic Reactors
+####################
+
+utility_component_template = {
+	key = "MPLATFORM_DARK_MATTER_REACTOR"
+	size = large
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = @medium_platform_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @medium_platform_cost_6
+			sr_dark_matter = 1
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = { military_station_medium }
+
+	ai_weight = {
+		weight = 60
+	}
+}
+
+#############
+# Large REACTORS #
+#############
+
+########################
+# Fission Reactors
+########################
+
+utility_component_template = {
+	key = "LPLATFORM_FISSION_REACTOR"
+	size = large
+	icon = "GFX_ship_part_reactor_1"
+	icon_frame = 1
+	power = @large_platform_power_1
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @large_platform_cost_1
+		}
+	}
+
+	prerequisites = { "tech_fission_power" }
+	component_set = "power_core"
+	size_restriction = { military_station_large }
+	upgrades_to = "LPLATFORM_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 10
+	}
+}
+
+########################
+# Fusion Reactors
+########################
+
+utility_component_template = {
+	key = "LPLATFORM_FUSION_REACTOR"
+	size = large
+	icon = "GFX_ship_part_reactor_2"
+	icon_frame = 1
+	power = @large_platform_power_2
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @large_platform_cost_2
+		}
+	}
+
+	prerequisites = { "tech_fusion_power" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = { military_station_large }
+	upgrades_to = "LPLATFORM_COLD_FUSION_REACTOR"
+
+	ai_weight = {
+		weight = 20
+	}
+}
+
+########################
+# Cold Fusion Reactors
+########################
+
+utility_component_template = {
+	key = "LPLATFORM_COLD_FUSION_REACTOR"
+	size = large
+	icon = "GFX_ship_part_reactor_3"
+	icon_frame = 1
+	power = @large_platform_power_3
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @large_platform_cost_3
+		}
+	}
+
+	prerequisites = { "tech_cold_fusion_power" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = { military_station_large }
+	upgrades_to = "LPLATFORM_ANTIMATTER_REACTOR"
+
+	ai_weight = {
+		weight = 30
+	}
+}
+
+########################
+# Antimatter Reactors
+########################
+
+utility_component_template = {
+	key = "LPLATFORM_ANTIMATTER_REACTOR"
+	size = large
+	icon = "GFX_ship_part_reactor_4"
+	icon_frame = 1
+	power = @large_platform_power_4
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @large_platform_cost_4
+		}
+	}
+
+	prerequisites = { "tech_antimatter_power" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = { military_station_large }
+	upgrades_to = "LPLATFORM_ZERO_POINT_REACTOR"
+
+	ai_weight = {
+		weight = 40
+	}
+}
+
+########################
+# Zero-Point Reactors
+########################
+
+utility_component_template = {
+	key = "LPLATFORM_ZERO_POINT_REACTOR"
+	size = large
+	icon = "GFX_ship_part_reactor_5"
+	icon_frame = 1
+	power = @large_platform_power_5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @large_platform_cost_5
+		}
+	}
+
+	prerequisites = { "tech_zero_point_power" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = { military_station_large }
+	upgrades_to = "LPLATFORM_DARK_MATTER_REACTOR"
+
+	ai_weight = {
+		weight = 50
+	}
+}
+
+####################
+# Engimatic Reactors
+####################
+
+utility_component_template = {
+	key = "LPLATFORM_DARK_MATTER_REACTOR"
+	size = large
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = @large_platform_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @large_platform_cost_6
+			sr_dark_matter = 2
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	class_restriction = { shipclass_military_station }
+	size_restriction = { military_station_large }
+
+	ai_weight = {
+		weight = 60
+	}
+}

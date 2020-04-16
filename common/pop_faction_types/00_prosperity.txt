@@ -119,30 +119,57 @@ prosperity = {
 	}
 
 	demand = {
-		title = "PROSPERITY_LIQUIDITY"
-		unfulfilled_title = "PROSPERITY_NO_LIQUIDITY"
-		desc = "PROSPERITY_LIQUIDITY_DESC"
+		title = "PROSPERITY_LIQUIDITY_1"
+		unfulfilled_title = "PROSPERITY_NO_LIQUIDITY_1"
+		desc = "PROSPERITY_LIQUIDITY_1_DESC"
 
-		fulfilled_effect = 10
-		unfulfilled_effect = -0.001
+		fulfilled_effect = 5
+		unfulfilled_effect = -2.5
 
 		potential = { # TODO get a reasonable trigger for counting colonies?
+			count_owned_pop ={
+				count > 100
+			} 
 			exists = owner
-			owner = {
-				any_owned_planet = {
-					NOT = { is_same_value = root.capital_scope }
-					root = {
-						owner = {
-							any_owned_planet = {
-								NOR = {
-									is_same_value = prevprevprev
-									is_same_value = root.owner.capital_scope
-								}
-							}
-						}
-					}
-				}
+		}
+
+		trigger = {
+			owner = { resource_stockpile_compare = { resource = energy value >= 1500 } }
+		}
+	}
+
+	demand = {
+		title = "PROSPERITY_LIQUIDITY_2"
+		unfulfilled_title = "PROSPERITY_NO_LIQUIDITY_2"
+		desc = "PROSPERITY_LIQUIDITY_2_DESC"
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -2.5
+
+		potential = { # TODO get a reasonable trigger for counting colonies?
+			count_owned_pop ={
+				count > 200
 			}
+		}
+
+		trigger = {
+			owner = { resource_stockpile_compare = { resource = energy value >= 3000 } }
+		}
+	}
+
+	demand = {
+		title = "PROSPERITY_LIQUIDITY_3"
+		unfulfilled_title = "PROSPERITY_NO_LIQUIDITY_3"
+		desc = "PROSPERITY_LIQUIDITY_3_DESC"
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -2.5
+
+		potential = { # TODO get a reasonable trigger for counting colonies?
+			count_owned_pop ={
+				count > 350
+			} 
+			exists = owner
 		}
 
 		trigger = {
@@ -151,12 +178,32 @@ prosperity = {
 	}
 
 	demand = {
-		title = "PROSPERITY_PHILOSOPHY"
-		unfulfilled_title = "PROSPERITY_NO_PHILOSOPHY"
-		desc = "PROSPERITY_PHILOSOPHY_DESC"
+		title = "PROSPERITY_LIQUIDITY_4"
+		unfulfilled_title = "PROSPERITY_NO_LIQUIDITY_4"
+		desc = "PROSPERITY_LIQUIDITY_4_DESC"
+
+		fulfilled_effect = 5
+		unfulfilled_effect = 0
+
+		potential = { # TODO get a reasonable trigger for counting colonies?
+			count_owned_pop ={
+				count > 350
+			}
+			exists = owner
+		}
+
+		trigger = {
+			owner = { resource_stockpile_compare = { resource = energy value >= 15000 } }
+		}
+	}
+
+	demand = {
+		title = "PROSPERITY_PHILOSOPHY_NO_WARS"
+		unfulfilled_title = "PROSPERITY_PHILOSOPH_NO_WARS_LOBBYING"
+		desc = "PROSPERITY_PHILOSOPHY_NO_WARS_DESC"
 
 		fulfilled_effect = 10
-		unfulfilled_effect = -10
+		unfulfilled_effect = -5
 
 		potential = {
 			exists = owner
@@ -177,11 +224,41 @@ prosperity = {
 	}
 
 	demand = {
+		title = "PROSPERITY_PHILOSOPHY_LIMITED_WARS"
+		unfulfilled_title = "PROSPERITY_PHILOSOPH_LIMITED_WARS_LOBBYING"
+		desc = "PROSPERITY_PHILOSOPHY_LIMITED_WARS_DESC"
+
+		fulfilled_effect = 10
+		unfulfilled_effect = -10
+
+		potential = {
+			exists = owner
+			owner = {
+				any_relation = {
+					has_communications = root.owner
+					is_country_type = default
+					NOT = { exists = overlord }
+				}
+			}
+		}
+
+		trigger = {
+			owner = {
+				or = {
+					has_policy_flag = no_wars
+					has_policy_flag = liberation_wars
+				}
+			}
+		}
+	}
+
+
+	demand = {
 		title = "PROSPERITY_PEACE"
 		unfulfilled_title = "PROSPERITY_NO_PEACE"
 		desc = "PROSPERITY_PEACE_DESC"
 
-		fulfilled_effect = 5
+		fulfilled_effect = 10
 		unfulfilled_effect = -10
 
 		potential = {
@@ -201,7 +278,7 @@ prosperity = {
 		desc = "PROSPERITY_NOT_AGGRESSOR_DESC"
 
 		unfulfilled_effect = -30
-		fulfilled_effect = 0.001
+		fulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -215,6 +292,34 @@ prosperity = {
 				NOR = {
 					has_country_flag = entered_war_as_attacker
 					any_war = { is_war_participant = { who = prev side = attackers } }
+				}
+			}
+		}
+	}
+
+	demand = {
+		title = "PROSPERITY_DEFENDING"
+		unfulfilled_title = "PROSPERITY_DEFENDING"
+		desc = "PROSPERITY_DEFENDING_DESC"
+
+		unfulfilled_effect = 0
+		fulfilled_effect = 10
+
+		potential = {
+			exists = owner
+			owner = {
+				OR = {
+					has_country_flag = entered_war_as_defender
+					any_war = { is_war_participant = { who = prev side = defenders } }
+				}
+			}
+		}
+
+		trigger = {
+			owner = {
+				OR = {
+					has_country_flag = entered_war_as_defender
+					any_war = { is_war_participant = { who = prev side = defenders } }
 				}
 			}
 		}
@@ -248,7 +353,7 @@ prosperity = {
 		desc = "PROSPERITY_PEACEFUL_APPLICATIONS_DESC"
 
 		fulfilled_effect = 5
-		unfulfilled_effect = -0.001
+		unfulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -281,8 +386,8 @@ prosperity = {
 		unfulfilled_title = "PROSPERITY_NO_MILITARY_APPLICATIONS"
 		desc = "PROSPERITY_MILITARY_APPLICATIONS_DESC"
 
-		unfulfilled_effect = -5
-		fulfilled_effect = +0.001
+		unfulfilled_effect = 0
+		fulfilled_effect = 5
 
 		potential = {
 			exists = owner
@@ -314,7 +419,7 @@ prosperity = {
 		desc = "MERCANTILE_DIPLO_STANCE_DESC"
 
 		fulfilled_effect = 10
-		unfulfilled_effect = -0.001
+		unfulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -337,7 +442,7 @@ prosperity = {
 		unfulfilled_title = "AGGRESSIVE_DIPLO_STANCE"
 		desc = "AGGRESSIVE_DIPLO_STANCE_DESC"
 
-		fulfilled_effect = 0.001
+		fulfilled_effect = 5
 		unfulfilled_effect = -10
 
 		potential = {

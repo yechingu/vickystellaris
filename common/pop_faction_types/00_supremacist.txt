@@ -171,7 +171,7 @@ supremacist = {
 		desc = "SUPREMACIST_ISOLATIONIST_NO_FEDERATION_DESC"
 
 		fulfilled_effect = 10
-		unfulfilled_effect = -20
+		unfulfilled_effect = -15
 
 		potential = {
 			exists = owner
@@ -255,8 +255,8 @@ supremacist = {
 		unfulfilled_title = "SUPREMACIST_MIGRATION_TREATIES"
 		desc = "SUPREMACIST_NO_MIGRATION_TREATIES_DESC"
 
-		unfulfilled_effect = -10
-		fulfilled_effect = 0.001
+		unfulfilled_effect = -5
+		fulfilled_effect = 5
 
 		potential = {
 			exists = owner
@@ -292,7 +292,7 @@ supremacist = {
 		unfulfilled_title = "SUPREMACIST_NO_DOMINATION"
 
 		fulfilled_effect = 10
-		unfulfilled_effect = -0.001
+		unfulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -321,7 +321,7 @@ supremacist = {
 		desc = "SUPREMACIST_FANATIC_PURIFIERS_DESC"
 
 		fulfilled_effect = 10
-		unfulfilled_effect = -0.001
+		unfulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -343,7 +343,7 @@ supremacist = {
 		desc = "SUPREMACIST_GIANT_MASSACRE_DESC"
 
 		fulfilled_effect = 10
-		unfulfilled_effect = -0.001
+		unfulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -382,7 +382,7 @@ supremacist = {
 		desc = "SUPREMACIST_PROCLAIM_SUPREMACY_DESC"
 
 		fulfilled_effect = 5
-		unfulfilled_effect = -0.001
+		unfulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -403,8 +403,8 @@ supremacist = {
 		unfulfilled_title = "SUPREMACIST_NO_CELEBRATE_DIVERSITY"
 		desc = "SUPREMACIST_CELEBRATE_DIVERSITY_DESC"
 
-		unfulfilled_effect = -5
-		fulfilled_effect = 0.001
+		unfulfilled_effect = -20
+		fulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -426,7 +426,7 @@ supremacist = {
 		desc = "STRONG_DIPLO_STANCE_DESC"
 
 		fulfilled_effect = 10
-		unfulfilled_effect = -0.001
+		unfulfilled_effect = 0
 
 		potential = {
 			exists = owner
@@ -455,7 +455,7 @@ supremacist = {
 		unfulfilled_title = "WEAK_DIPLO_STANCE"
 		desc = "WEAK_DIPLO_STANCE_DESC"
 
-		fulfilled_effect = 0.01
+		fulfilled_effect = 0
 		unfulfilled_effect = -10
 
 		potential = {

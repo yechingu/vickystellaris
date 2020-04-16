@@ -1773,11 +1773,16 @@ ethic_fanatic_pacifist = {
 	}
 
 	country_modifier = {
+		defensive_war_influence_gain_add = 2
 		empire_size_pops_mult = -0.30
 		planet_jobs_produces_mult = 0.1
-		ship_military_station_small_upkeep_mult = -0.3
+		planet_stability_add = 10
+		shipclass_military_station_build_cost_mult = -0.2
+		starbase_upgrade_cost_mult = -0.2
 		ship_home_territory_fire_rate_mult = 0.2
 		ship_disengage_chance_mult = 0.3
+		army_health_mult = 0.5
+		local_trade_protection_add = 20
 	}
 
 	random_weight = {
@@ -1795,11 +1800,16 @@ ethic_pacifist = {
 	fanatic_variant = ethic_fanatic_pacifist
 
 	country_modifier = {
+		defensive_war_influence_gain_add = 1
 		empire_size_pops_mult = -0.15
 		planet_jobs_produces_mult = 0.05
-		ship_military_station_small_upkeep_mult = -0.15
+		planet_stability_add = 5
+		shipclass_military_station_build_cost_mult = -0.1
+		starbase_upgrade_cost_mult = -0.1
 		ship_home_territory_fire_rate_mult = 0.1
 		ship_disengage_chance_mult = 0.15
+		army_health_mult = 0.25
+		local_trade_protection_add = 10
 	}
 
 	tags = {

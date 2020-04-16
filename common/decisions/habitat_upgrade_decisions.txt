@@ -9,7 +9,7 @@ expand_habitat_1 = {
 					has_origin = origin_void_dwellers
 				}
 			}
-			minerals = 2000
+			alloys = 1000
 		}
 		cost = {
 			trigger = {
@@ -25,6 +25,9 @@ expand_habitat_1 = {
 		}
 	}
 	potential = {
+		planet = {
+			is_planet_class = pc_habitat
+		}
 		exists = owner
 		owner = {
 			has_technology = tech_habitat_2
@@ -63,7 +66,7 @@ expand_habitat_2 = {
 					has_origin = origin_void_dwellers
 				}
 			}
-			minerals = 2000
+			alloys = 1000
 		}
 		cost = {
 			trigger = {
@@ -79,6 +82,9 @@ expand_habitat_2 = {
 		}
 	}
 	potential = {
+		planet = {
+			is_planet_class = pc_habitat
+		}
 		exists = owner
 		owner = {
 			has_technology = tech_habitat_3
