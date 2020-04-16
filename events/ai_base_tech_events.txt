@@ -9,6 +9,9 @@ country_event = {
 		if = {
 			limit = {
 				is_ai = yes
+				NOT = {
+					has_country_flag = base_tech_added
+				}
 			}
 			add_tech_progress = {
 				tech = tech_mountain_range progress = 0.75
@@ -70,6 +73,7 @@ country_event = {
 			add_research_option = tech_rare_crystals
 			add_research_option = tech_hydroponics
 			add_research_option = tech_alien_life_studies
+			set_country_flag = base_tech_added
 		}
 	}
 }
@@ -85,6 +89,9 @@ country_event = {
 				is_ai = no
 				NOT = {
 					has_origin = origin_shattered_ring
+				}
+				NOT = {
+					has_country_flag = base_tech_added
 				}
 			}
 			add_tech_progress  = {
@@ -147,6 +154,7 @@ country_event = {
 			add_research_option = tech_rare_crystals
 			add_research_option = tech_hydroponics
 			add_research_option = tech_alien_life_studies
+			set_country_flag = base_tech_added
 		}
 	}
 }
@@ -161,6 +169,9 @@ country_event = {
 			limit = {
 				is_ai = no
 				has_origin = origin_shattered_ring
+				NOT = {
+					has_country_flag = base_tech_added
+				}
 			}
 			add_tech_progress  = {
 				tech = tech_mountain_range progress = 0.25
@@ -210,6 +221,7 @@ country_event = {
 			add_research_option = tech_mine_betharian
 			add_research_option = tech_hydroponics
 			add_research_option = tech_alien_life_studies
+			set_country_flag = base_tech_added
 		}
 	}
 }

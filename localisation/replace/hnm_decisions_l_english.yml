@@ -1,21 +1,28 @@
 ﻿l_english:
  decision_planet_emigration_push_1:0 "Encourage Emigration"
- decision_planet_emigration_push_1_desc:0 "Encourage Emigration away from this planet by introducing various incentives and discouragements. This will decrease planetary immigration attraction and increase Emigration push. However, such decision can cause some unexpected curroption."
+ decision_planet_emigration_push_1_desc:0 "Encourage Emigration away from this planet by introducing various incentives and discouragements. This will decrease planetary immigration attraction and increase Emigration push. However, such decision can cause some unexpected corruption."
  
  decision_planet_emigration_push_2:0 "Increase Emigration Encouragement"
  decision_planet_emigration_push_2_desc:0 "Further increase an effort to push population away from this planet, for whatever reason. Population is actively encouraged to emigration away from this planet, and even forced to do so sometimes. Such decision may destablize planet."
  
  decision_planet_emigration_push_3:0 "Enforce Emigration Push"
  decision_planet_emigration_push_3_desc:0 "Actively push the local population to force them to emigrate away from this planet. Such decision may overwhelm local government with bureaucratic load, and can destabilize planet significantly."
+
+ decision_planet_emigration_push_revoke:0 "Revoke Emigration Encouragement"
+ decision_planet_emigration_push_revoke:0 "Remove all Emigration Encouragement effect from this planet."
  
  planet_emigration_push_1:0 "Emigration Encouragement Level 1"
+ planet_emigration_push_1_desc:0 "Pops of this planet is being 'encouraged' to emigrate."
  planet_emigration_push_2:0 "Emigration Encouragement Level 2"
+ planet_emigration_push_2_desc:0 "Aggressive Emigration 'Encouragement' is active in this planet."
  planet_emigration_push_3:0 "Emigration Encouragement Level 3"
+ planet_emigration_push_3_desc:0 "Local Authorities of this planet is doing its best to let Pops to COMPLY to 'Encouragement.'"
 
  decision_planet_utopian_benefit:0 "Introduce Increased Utopian Benefit"
  decision_planet_utopian_benefit_desc:0 "Introducing Increased Benefits for Pops with Utopian Living Standard can prevent them from becomming Unemployed. However, this will significantly increase Upkeep costs of Pops. (Unemployed Pops with Utopian Living Standard will be assigned to 'Free Thinker' Jobs, and behave less unproductivly. This also can help removing annoying 'Unemployment' pop ups.)"
 
  planet_uptopian_benefit:0 "Increased Utopian Benefit"
  planet_uptopian_benefit_desc:0 "Utopian Benefit has been increased in this planet to suppress unemployment issues."
+
 
  

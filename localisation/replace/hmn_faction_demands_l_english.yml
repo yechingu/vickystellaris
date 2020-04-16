@@ -1,0 +1,56 @@
+﻿l_english:
+ PROGRESSIVE_COLONIALIZATION_RIGHT:0 "Colonization Rights for all"
+ PROGRESSIVE_COLONIALIZATION_RIGHT_DESC:0 "Allowing all Citizens and Residents to colonize will satisfy this faction."
+ PROGRESSIVE_COLONIALIZATION_RIGHT_LOBBYING:0 "Lobbying for the 'Universal' Colonization Rights"
+
+ PROGRESSIVE_NO_RESETTLEMENT:0 "Resettlement Banned"
+ PROGRESSIVE_NO_RESETTLEMENT_DESC:0 "Fully disallowing Resettlement will satisfy this faction."
+ PROGRESSIVE_NO_RESETTLEMENT_LOBBYING:0 "Lobbying for Banning Resettlement"
+
+ PROGRESSIVE_SUBSIDIZED_RESTTLEMENT:0 "Subsidized Resettlement"
+ PROGRESSIVE_SUBSIDIZED_RESTTLEMENT_DESC:0 "Subsidizing Resettlement will make this faction less unsatisfied about our Resettlement Policy."
+ PROGRESSIVE_SUBSIDIZED_RESTTLEMENT_LOBBYING:0 "Lobbying for the Subsidized Resettlement"
+
+ PROGRESSIVE_COMPENSATED_RESTTLEMENT:0 "Compensated Resettlement"
+ PROGRESSIVE_COMPENSATED_RESTTLEMENT_DESC:0 "Compensating Resettlement will make this faction less unsatisfied about our Resettlement Policy"
+ PROGRESSIVE_COMPENSATED_RESTTLEMENT_LOBBYING:0 "Lobbying for the Compensated Resettlement"
+
+ PROGRESSIVE_NO_FORCED_RESETTLEMENT:0 "No Unrestricted Resettlement"
+ PROGRESSIVE_NO_FORCED_RESETTLEMENT_DESC:0 "Enacting Unrestricted Resettlement will outrage this faction."
+ PROGRESSIVE_FORCED_RESETTLEMENT_OBJECTION:0 "Unrestricted Resettlement Objection"
+
+ PROGRESSIVE_UNIVERSAL_SUFFRAGE:0 "Universal Suffrage"
+ PROGRESSIVE_UNIVERSAL_SUFFRAGE_DESC:0 "Having fully Democratic Authority instead of Oligarchy or Autocratic Government wilL saticefy this faction."
+ PROGRESSIVE_UNIVERSAL_SUFFRAGE_LOBBYING:0 "Lobbying for the Universal Suffrage"
+
+ PROSPERITY_PHILOSOPHY_NO_WARS:0 "Defensive Wars Only"
+ PROSPERITY_PHILOSOPHY_NO_WARS_DES:0 "Having Defensive Wars Only policy will saticefy this faction."
+ PROSPERITY_PHILOSOPH_NO_WARS_LOBBYING:0 "Offensive Measures Allowed"
+ 
+ PROSPERITY_PHILOSOPHY_LIMITED_WARS:0 "Irenic War Philosophy"
+ PROSPERITY_PHILOSOPHY_LIMITED_WARS_DESC:0 "Having either Defensive Wars Only, or Liberation Wars policy will saticefy this faction"
+ PROSPERITY_PHILOSOPH_LIMITED_WARS_LOBBYING:0 "Shameful War Philosophy"
+
+ PROSPERITY_DEFENDING:0 "Defendig in War"
+ PROSPERITY_DEFENDING_desc:0 "The faction is providing support to government in defence of our country."
+
+ PROSPERITY_LIQUIDITY_1:0 "Liquid Solidarity Level 1"
+ PROSPERITY_LIQUIDITY_1_desc:0 "Having at least 1500 Energy Credit in Reserve will saticefy this faction."
+ PROSPERITY_NO_LIQUIDITY_1:0 "Liquid Solidarity Level 1 Unachived"
+
+ PROSPERITY_LIQUIDITY_1:0 "Liquid Solidarity Level 2"
+ PROSPERITY_LIQUIDITY_1_desc:0 "Having at least 3000 Energy Credit in Reserve will saticefy this faction."
+ PROSPERITY_NO_LIQUIDITY_1:0 "Liquid Solidarity Level 2 Unachived"
+
+ PROSPERITY_LIQUIDITY_1:0 "Liquid Solidarity Level 3"
+ PROSPERITY_LIQUIDITY_1_desc:0 "Having at least 5000 Energy Credit in Reserve will saticefy this faction."
+ PROSPERITY_NO_LIQUIDITY_1:0 "Liquid Solidarity Level 3 Unachived"
+
+ PROSPERITY_LIQUIDITY_1:0 "Total Liquidity"
+ PROSPERITY_LIQUIDITY_1_desc:0 "Having at least 15000 Energy Credit in Reserve will saticefy this faction."
+ PROSPERITY_NO_LIQUIDITY_1:0 "Total Liquidity Unachived"
+ 
+
+ 
+
+ 
