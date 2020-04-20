@@ -1781,7 +1781,7 @@ ethic_fanatic_pacifist = {
 		starbase_upgrade_cost_mult = -0.2
 		ship_home_territory_fire_rate_mult = 0.2
 		ship_disengage_chance_mult = 0.3
-		army_health_mult = 0.5
+		army_health = 0.5
 		local_trade_protection_add = 20
 	}
 
@@ -1808,7 +1808,7 @@ ethic_pacifist = {
 		starbase_upgrade_cost_mult = -0.1
 		ship_home_territory_fire_rate_mult = 0.1
 		ship_disengage_chance_mult = 0.15
-		army_health_mult = 0.25
+		army_health = 0.25
 		local_trade_protection_add = 10
 	}
 

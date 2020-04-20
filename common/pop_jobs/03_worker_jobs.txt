@@ -34,9 +34,6 @@ clerk = {
 		planet_amenities_add = 2
 		trade_value_add = 2
 	}
-	country_modifier = {
-		country_unity_produces_mult = -0.005
-	}
 
 	weight = {
 		weight = @clerk_job_weight
@@ -44,10 +41,6 @@ clerk = {
 			factor = 0.5
 			is_enslaved = yes
 			can_take_servant_job = no
-			NOR = {
-				has_trait = trait_nuumismatic_administration
-				has_trait = trait_thrifty
-			}
 		}
 		modifier = {
 			factor = 2
@@ -56,13 +49,6 @@ clerk = {
 				is_shackled_robot = yes
 			}
 			can_take_servant_job = no
-		}
-		modifier = {
-			factor = 2.5
-			OR = {
-				has_trait = trait_thrifty
-				has_trait = trait_nuumismatic_administration
-			}
 		}
 		modifier = {
 			factor = 0.1
@@ -126,7 +112,6 @@ technician = {
 			OR = {
 				has_trait = trait_robot_superconductive
 				has_trait = trait_industrious
-				has_trait = trait_nuumismatic_administration
 			}
 		}
 		modifier = {
@@ -135,7 +120,6 @@ technician = {
 			can_take_servant_job = no
 			NOR = {
 				has_trait = trait_syncretic_proles
-				has_trait = trait_nuumismatic_administration
 				has_trait = trait_robot_superconductive
 				has_trait = trait_industrious
 			}
@@ -943,13 +927,6 @@ preacher = {
 		modifier = {
 			factor = 2
 			owner = { has_civic = civic_exalted_priesthood }
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_trait = trait_thrifty
-				has_trait = trait_nuumismatic_administration
-			}
 		}
 		modifier = {
 			factor = 1.5

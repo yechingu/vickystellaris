@@ -21,12 +21,15 @@ spawning_drone = {
 	}
 
 	planet_modifier = {
-		planet_amenities_no_happiness_add = 5
+		planet_amenities_no_happiness_add = 6
 		pop_growth_speed = 0.25
 	}
 
 	resources = {
 		category = planet_jobs
+		produces = {
+			unity = 1
+		}
 		upkeep = {
 			trigger = {
 				is_lithoid = no

@@ -41,9 +41,9 @@ civic_media_conglomerate = {
 	potential = { authority = { value = auth_corporate } }
 	random_weight = { base = 5 }
 	modifier = {
-		country_war_exhaustion_mult = -0.05
+		country_war_exhaustion_mult = -0.1
 		pop_citizen_happiness = 0.05
-		edicts_influence_cost_mult = -0.25
+		edicts_cost_mult = -0.25
 	}
 }
 
@@ -71,7 +71,7 @@ civic_free_traders = {
 	modifier = {
 		trade_value_mult = 0.10
 		branch_office_value_mult = 0.10
-		country_border_friction_mult = -0.1
+		country_border_friction_mult = -0.25
 	}
 }
 
@@ -110,7 +110,8 @@ civic_ruthless_competition = {
 	random_weight = { base = 5 }
 	modifier = {
         leader_skill_levels = 1
-		species_leader_exp_gain = 0.1
+		species_leader_exp_gain = 0.25
+		pop_demotion_time_mult = -0.4
     }
 }
 

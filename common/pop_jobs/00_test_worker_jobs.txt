@@ -27,10 +27,6 @@ laborer = {
 			minerals = 3
 		}
 	}
-	
-	country_modifier = {
-		pop_amenities_usage_mult = 0.005
-	}
 
 	triggered_planet_modifier = {
 		potential = {

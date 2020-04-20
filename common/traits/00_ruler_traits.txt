@@ -121,13 +121,8 @@ trait_ruler_fortifier = {
 	}
 	modifier = {
 		starbase_upgrade_cost_mult = -0.2
-		ship_military_station_small_cost_mult = -0.1
-		ship_military_station_medium_cost_mult = -0.1
-		ship_military_station_large_cost_mult = -0.1
-		shipsize_military_station_large_build_speed_mult = 0.5
-		shipsize_military_station_medium_build_speed_mult = 0.5
-		shipsize_military_station_small_build_speed_mult = 0.5
-		starbase_upgrade_speed_mult = 0.5
+		shipclass_military_station_build_cost_mult = -0.1
+		starbase_upgrade_speed_mult = 1.0
 	}
 	leader_trait = { ruler }
 	leader_class = { ruler }

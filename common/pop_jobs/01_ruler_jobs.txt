@@ -34,10 +34,6 @@ head_researcher = {
 		planet_amenities_add = 5
 	}
 
-	country_modifier = {
-		pop_amenities_usage_mult = -0.01
-	}
-
 	weight = {
 		weight = @ruler_job_weight
 		modifier = {
@@ -178,11 +174,6 @@ high_priest = {
 		planet_amenities_add = 5
 	}
 
-	country_modifier = {
-		country_unity_produces_mult = 0.0075
-		pop_amenities_usage_mult = -0.015
-	}
-
 
 	weight = {
 		weight = @ruler_job_weight	
@@ -282,11 +273,6 @@ administrator = {
 		planet_amenities_add = 8
 	}
 
-	country_modifier = {
-		country_unity_produces_mult = 0.005
-		pop_amenities_usage_mult = -0.01
-	}
-
 	weight = {
 		weight = @ruler_job_weight
 		modifier = {
@@ -376,11 +362,6 @@ noble = {
 		planet_stability_add = 5
 	}
 
-	country_modifier = {
-		country_unity_produces_mult = 0.005
-		pop_amenities_usage_mult = -0.01
-	}
-
 	weight = {
 		weight = @ruler_job_weight	
 		modifier = {
@@ -457,11 +438,11 @@ merchant = {
 	planet_modifier = {
 		planet_amenities_add = 5
 		trade_value_add = 8
+		trade_value_mult = 0.01
 	}
 
 	country_modifier = {
 		country_unity_produces_mult = 0.005
-		pop_amenities_usage_mult = -0.005
 	}
 
 	resources = {
@@ -478,14 +459,6 @@ merchant = {
 
 	weight = {
 		weight = @ruler_job_weight
-		modifier = {
-			factor = 5
-			has_trait = trait_thrifty
-		}
-		modifier = {
-			factor = 5
-			has_trait = trait_nuumismatic_administration
-		}
 		modifier = {
 			factor = 3.5
 			OR = {
@@ -575,24 +548,13 @@ executive = {
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 5
+		planet_amenities_add = 8
 		trade_value_add = 4
-	}
-
-	country_modifier = {
-		country_unity_produces_mult = 0.005
-		pop_amenities_usage_mult = -0.01
+		trade_value_mult = 0.015
 	}
 
 	weight = {
 		weight = @ruler_job_weight
-		modifier = {
-			factor = 5.0
-			OR = {
-			has_trait = trait_thrifty
-			has_trait = trait_nuumismatic_administration
-			}
-		}
 		modifier = {
 			factor = 3.5
 			OR = {

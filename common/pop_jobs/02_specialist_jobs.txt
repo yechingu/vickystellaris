@@ -268,6 +268,16 @@ priest = {
 		planet_amenities_add = 5
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_valid_civic = civic_gospel_of_the_masses
+			}
+		}
+		trade_value_add = 2
+	}
+
 	weight = {
 		weight = @specialist_job_weight
 		modifier = {
@@ -487,6 +497,15 @@ enforcer = {
 
 	planet_modifier = {
 		planet_crime_add = -25
+		planet_amenities_add = 2
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_valid_civic = civic_police_state  }
+		}
+		planet_amenities_add = 2
 	}
 
 	triggered_country_modifier = {
@@ -756,10 +775,6 @@ artisan = {
 			minerals = 6
 		}
 	}
-	
-	country_modifier = {
-		pop_amenities_usage_mult = -0.015
-	}
 
 	weight = {
 		weight = @specialist_job_weight
@@ -830,6 +845,7 @@ entertainer = {
 		category = planet_entertainers
 		produces = {
 			unity = 2
+			society_research = 1
 		}
 		upkeep = {
 			consumer_goods = 1
@@ -838,10 +854,7 @@ entertainer = {
 
 	planet_modifier = {
 		planet_amenities_add = 10
-	}
-	
-	country_modifier = {
-		country_unity_produces_mult = 0.01
+		planet_jobs_unity_produces_mult = 0.01
 	}
 
 
@@ -1142,19 +1155,7 @@ bureaucrat = {
 	}
 	
 	planet_modifier = {
-		pop_amenities_usage_mult = -0.025
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			NOT = {
-				owner = { has_valid_civic = civic_byzantine_bureaucracy }
-			}
-		}
-		modifier = {
-			planet_jobs_specialist_produces_mult = -0.005
-		}
+		planet_amenities_add = 1
 	}
 
 	triggered_planet_modifier = {
@@ -1164,6 +1165,7 @@ bureaucrat = {
 		}
 		modifier = {
 			planet_stability_add = 1
+			planet_amenities_add = 2
 		}
 	}
 
@@ -1534,13 +1536,17 @@ healthcare = {
 	}
 
 	planet_modifier = {
-		planet_amenities_add = 5
-		pop_growth_speed = 0.05
+		planet_amenities_add = 6
+		pop_growth_speed = 0.075
 		pop_environment_tolerance = 0.025
 	}
 
 	resources = {
 		category = planet_doctors
+		produces = {
+			unity = 2
+			society_research = 1
+		}
 		upkeep = {
 			consumer_goods = 1
 		}
@@ -1605,15 +1611,6 @@ manager = {
 		trade_value_add = 2
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			has_trait = trait_nuumismatic_administration
-		}
-		modifier = {
-			trade_value_add = 0.5
-		}
-	}
-
 	resources = {
 		category = planet_managers
 		produces = {
@@ -1655,10 +1652,6 @@ manager = {
 		modifier = {
 			factor = 2.5
 			has_trait = trait_thrifty
-		}
-		modifier = {
-			factor = 2.5
-			has_trait = trait_nuumismatic_administration
 		}
 		modifier = {
 			factor = 1.5

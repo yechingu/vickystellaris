@@ -318,6 +318,11 @@ constructor = {
 	max_hitpoints = @construction_hp
 	modifier = {
 		ship_evasion_add = @construction_evasion
+		ship_disengage_chance_mult = 1.0
+		ship_hull_regen_add_static = 0.5
+		ship_armor_regen_add_static = 0.5
+		ship_emergency_ftl_min_days_mult = -1.0
+		ship_windup_mult = -0.5
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
@@ -364,6 +369,11 @@ colonizer = {
 	max_hitpoints = @colony_hp
 	modifier = {
 		ship_evasion_add = @colony_evasion
+		ship_disengage_chance_mult = 1.0
+		ship_hull_regen_add_static = 0.5
+		ship_armor_regen_add_static = 0.5
+		ship_emergency_ftl_min_days_mult = -1.0
+		ship_windup_mult = -0.5
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
@@ -484,6 +494,11 @@ sponsored_colonizer = {
 	max_hitpoints = @colony_hp
 	modifier = {
 		ship_evasion_add = @colony_evasion
+		ship_disengage_chance_mult = 1.0
+		ship_hull_regen_add_static = 0.5
+		ship_armor_regen_add_static = 0.5
+		ship_emergency_ftl_min_days_mult = -1.0
+		ship_windup_mult = -0.5
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
@@ -539,6 +554,11 @@ lithoid_colonizer = {
 	max_hitpoints = @colony_hp
 	modifier = {
 		ship_evasion_add = @colony_evasion
+		ship_disengage_chance_mult = 1.0
+		ship_hull_regen_add_static = 0.5
+		ship_armor_regen_add_static = 0.5
+		ship_emergency_ftl_min_days_mult = -1.0
+		ship_windup_mult = -0.5
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
@@ -588,9 +608,15 @@ science = {
 	max_hitpoints = @science_hp
 	modifier = {
 		ship_evasion_add = @science_evasion
+		ship_hull_regen_add_static = 0.5
+		ship_armor_regen_add_static = 0.5
+		ship_emergency_ftl_min_days_mult = -1.0
+		ship_windup_mult = -1.0
+		ship_disengage_chance_mult = 2.0
 	}
 	ship_modifier = {
 		ship_hyperlane_range_add = 3
+		ship_sensor_range_add = 3
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
@@ -631,13 +657,24 @@ science = {
 
 transport = {
 	max_speed = @speed_very_fast
-	acceleration = 0.3
 	rotation_speed = 0.2
 	acceleration = 0.6
 	max_hitpoints = @transport_hp
 	modifier = {
 		ship_armor_add = 100
 		ship_evasion_add = @transport_evasion
+		ship_emergency_ftl_min_days_mult = -1.0
+		ship_disengage_chance_mult = 2.0
+		ship_hull_regen_add_static = 0.5
+		ship_armor_regen_add_static = 0.5
+		ship_emergency_ftl_min_days_mult = -0.75
+		ship_disengage_chance_mult = 2.0
+		ship_hull_regen_add_static = 0.5
+		ship_armor_regen_add_static = 0.5
+		ship_windup_mult = -0.25
+	}
+	ship_modifier = {
+		ship_sensor_range_add = 3
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
@@ -672,14 +709,14 @@ military_station_small = {
 	modifier = {
 		ship_evasion_mult = -0.9
 		ship_piracy_suppression_add = 2
-		ship_armor_mult = 0.25
-		ship_shield_mult = 0.25
-		ship_upkeep_mult = -0.25
+		ship_armor_mult = 0.5
+		ship_shield_mult = 0.5
+		ships_upkeep_mult = -0.4
 	}
 	ship_modifier = {
-		ship_weapon_range_mult = 0.20
+		ship_weapon_range_mult = 0.5
 		ship_engagement_range_mult = 2.0
-		ship_fire_rate_mult = 0.1
+		ship_fire_rate_mult = 0.2
 	}
 	combat_size_multiplier = 2
 	size_multiplier = 1
@@ -706,11 +743,6 @@ military_station_small = {
 
 	build_block_radius = @build_block_radius_military
 
-	potential_construction = {
-		is_scope_type = starbase
-		has_starbase_size >= starbase_outpost
-	}
-
 	resources = {
 		category = ships
 	}
@@ -720,19 +752,19 @@ military_station_medium = {
 	max_speed = 6
 	rotation_speed = 10
 	acceleration = 10
-	entity = "military_station_large_entity"
+	entity = "military_station_medium_entity"
 	modifier = {
 		ship_evasion_mult = -0.9
 		ships_upkeep_mult = -0.25
 		ship_piracy_suppression_add = 6
-		ship_armor_mult = 0.25
-		ship_shield_mult = 0.25
-		ship_upkeep_mult = -0.25
+		ship_armor_mult = 0.5
+		ship_shield_mult = 0.5
+		ships_upkeep_mult = -0.4
 	}
 	ship_modifier = {
-		ship_weapon_range_mult = 0.20
+		ship_weapon_range_mult = 0.5
 		ship_engagement_range_mult = 2.0
-		ship_fire_rate_mult = 0.1
+		ship_fire_rate_mult = 0.2
 	}
 	max_hitpoints = 6000
 	combat_size_multiplier = 2
@@ -747,13 +779,15 @@ military_station_medium = {
 	num_target_locators = 0
 	is_space_station = yes
 	base_buildtime = 360
-	is_listed = no
 	is_designable = yes
 	uses_name_prefix = no
 	takes_name_from_ship_design = yes
 
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	prerequisites = { "tech_starbase_3" }
+	prerequisites = { 
+		"tech_starbase_3"
+		"tech_space_defense_station_1"
+	}
 	class = shipclass_military_station
 	construction_type = starbase_defenses
 	
@@ -763,10 +797,6 @@ military_station_medium = {
 
 	build_block_radius = @build_block_radius_military
 	
-	potential_construction = {
-		is_scope_type = starbase
-		has_starbase_size >= starbase_outpost
-	}
 
 	resources = {
 		category = ships
@@ -777,18 +807,18 @@ military_station_large = {
 	max_speed = 6
 	rotation_speed = 10
 	acceleration = 10
-	entity = "military_station_medium_entity"
+	entity = "military_station_large_entity"
 	modifier = {
 		ship_evasion_mult = -0.9
 		ship_piracy_suppression_add = 12
-		ship_armor_mult = 0.25
-		ship_shield_mult = 0.25
-		ships_upkeep_mult = -0.25
+		ship_armor_mult = 0.5
+		ship_shield_mult = 0.5
+		ships_upkeep_mult = -0.4
 	}
 	ship_modifier = {
-		ship_weapon_range_mult = 0.20
+		ship_weapon_range_mult = 0.5
 		ship_engagement_range_mult = 2.0
-		ship_fire_rate_mult = 0.1
+		ship_fire_rate_mult = 0.2
 	}
 	max_hitpoints = 15000
 	combat_size_multiplier = 2
@@ -802,14 +832,16 @@ military_station_large = {
 	}
 	num_target_locators = 0
 	is_space_station = yes
-	is_listed = no
 	is_designable = yes
 	base_buildtime = 720
 	uses_name_prefix = no
 	takes_name_from_ship_design = yes
 
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
-	prerequisites = { "tech_starbase_4" }
+	prerequisites = {
+		"tech_starbase_4" 
+		"tech_space_defense_station_1"
+	}
 	class = shipclass_military_station
 	construction_type = starbase_defenses
 	
@@ -817,13 +849,8 @@ military_station_large = {
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
 
-	build_block_radius = @build_block_radius_military
+	build_block_radius = 200
 	
-	potential_construction = {
-		is_scope_type = starbase
-		has_starbase_size >= starbase_outpost
-	}
-
 	resources = {
 		category = ships
 	}

@@ -8,6 +8,16 @@ economic_policy = {
 		
 		valid = {
 			is_at_war = no
+			AND = {
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_hive_devouring_swarm
+					has_valid_civic = civic_machine_terminator
+				}
+				NOT = {
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
 		}
 		
 		modifier = {
@@ -48,6 +58,16 @@ economic_policy = {
 		
 		valid = {
 			is_at_war = no
+			AND = {
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_hive_devouring_swarm
+					has_valid_civic = civic_machine_terminator
+				}
+				NOT = {
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
 		}
 
 		policy_flags = {
@@ -86,6 +106,16 @@ economic_policy = {
 		
 		valid = {
 			is_at_war = no
+			AND = {
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_hive_devouring_swarm
+					has_valid_civic = civic_machine_terminator
+				}
+				NOT = {
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
 		}
 
 		policy_flags = {
@@ -120,6 +150,19 @@ economic_policy = {
 
 		policy_flags = {
 			economic_policy_partial_mobilization
+		}
+
+		valid = {
+			AND = {
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_hive_devouring_swarm
+					has_valid_civic = civic_machine_terminator
+				}
+				NOT = {
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
 		}
 		
 		modifier = {
@@ -161,6 +204,14 @@ economic_policy = {
 		
 		valid = {
 			is_at_war = yes
+			NAND = {
+				OR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_hive_devouring_swarm
+					has_valid_civic = civic_machine_terminator
+				}
+				has_global_flag = galactic_community_crisis_fighting
+			}
 		}
 
 		policy_flags = {
@@ -196,6 +247,10 @@ economic_policy = {
 					has_ethic = "ethic_fanatic_pacifist"
 				}
 			}
+			modifier = {
+				factor = 10000
+				has_global_flag = galactic_community_crisis_fighting
+			}
 		}
 	}
 	
@@ -203,7 +258,17 @@ economic_policy = {
 		name = "economic_policy_total_mobilization"
 		
 		valid = {
-			is_at_war = yes
+			OR = {
+				is_at_war = yes
+				AND = {
+					NOR = {
+						has_valid_civic = civic_fanatic_purifiers
+						has_valid_civic = civic_hive_devouring_swarm
+						has_valid_civic = civic_machine_terminator
+					}
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
 		}
 
 		policy_flags = {
@@ -244,7 +309,17 @@ economic_policy = {
 		name = "economic_policy_desperate_measures"
 		
 		valid = {
-			is_at_war = yes
+			OR = {
+				is_at_war = yes
+				AND = {
+					NOR = {
+						has_valid_civic = civic_fanatic_purifiers
+						has_valid_civic = civic_hive_devouring_swarm
+						has_valid_civic = civic_machine_terminator
+					}
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
 		}
 
 		policy_flags = {
@@ -284,6 +359,16 @@ production_policy = {
 		}
 		valid ={
 			is_at_war = no
+			AND = {
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_hive_devouring_swarm
+					has_valid_civic = civic_machine_terminator
+				}
+				NOT = {
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
 		}
 		
 		modifier ={
@@ -306,6 +391,16 @@ production_policy = {
 		}
 		valid = {
 			is_at_war = no
+			AND = {
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_hive_devouring_swarm
+					has_valid_civic = civic_machine_terminator
+				}
+				NOT = {
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
 		}
 		
 		modifier = {
@@ -347,6 +442,16 @@ production_policy = {
 		}
 		valid = {
 			is_at_war = no
+			AND = {
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_hive_devouring_swarm
+					has_valid_civic = civic_machine_terminator
+				}
+				NOT = {
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
 		}
 		
 		modifier = {
@@ -368,6 +473,16 @@ production_policy = {
 		}
 		valid = {
 			is_at_war = yes
+			AND = {
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_hive_devouring_swarm
+					has_valid_civic = civic_machine_terminator
+				}
+				NOT = {
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
 		}
 		
 		modifier = {
@@ -391,6 +506,16 @@ production_policy = {
 		}
 		valid = {
 			is_at_war = yes
+			AND = {
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_hive_devouring_swarm
+					has_valid_civic = civic_machine_terminator
+				}
+				NOT = {
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
 		}
 		
 		modifier = {
@@ -420,6 +545,16 @@ production_policy = {
 		}
 		valid = {
 			is_at_war = yes
+			AND = {
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_hive_devouring_swarm
+					has_valid_civic = civic_machine_terminator
+				}
+				NOT = {
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
 		}
 		
 		modifier = {
@@ -438,7 +573,10 @@ production_policy = {
 			has_authority = auth_machine_intelligence
 		}
 		valid = {
-			is_at_war = yes
+			OR = {
+				is_at_war = yes
+				has_global_flag = galactic_community_crisis_fighting
+			}
 		}
 		
 		modifier = {
@@ -461,7 +599,17 @@ production_policy = {
 			has_civic = civic_machine_servitor
 		}
 		valid = {
-			is_at_war = yes
+			OR = {
+				is_at_war = yes
+				AND = {
+					NOR = {
+						has_valid_civic = civic_fanatic_purifiers
+						has_valid_civic = civic_hive_devouring_swarm
+						has_valid_civic = civic_machine_terminator
+					}
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
 		}
 		
 		modifier = {
@@ -490,7 +638,17 @@ production_policy = {
 			has_authority = auth_hive_mind
 		}
 		valid = {
-			is_at_war = yes
+			OR = {
+				is_at_war = yes
+				AND = {
+					NOR = {
+						has_valid_civic = civic_fanatic_purifiers
+						has_valid_civic = civic_hive_devouring_swarm
+						has_valid_civic = civic_machine_terminator
+					}
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
 		}
 		
 		modifier = {
@@ -646,6 +804,16 @@ maintenance_policy = {
 		
 		valid = {
 			is_at_war = no
+			AND = {
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_hive_devouring_swarm
+					has_valid_civic = civic_machine_terminator
+				}
+				NOT = {
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
 		}
 		modifier = {
 			ships_upkeep_mult = -0.75
@@ -665,6 +833,16 @@ maintenance_policy = {
 		
 		valid = {
 			is_at_war = no
+			AND = {
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_hive_devouring_swarm
+					has_valid_civic = civic_machine_terminator
+				}
+				NOT = {
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
 		}
 		modifier = {
 			ships_upkeep_mult = -0.25
@@ -694,6 +872,19 @@ maintenance_policy = {
 	}
 	option = {
 		name = force_maintenance_policy_normal
+
+		valid = {
+			AND = {
+				NOR = {
+					has_valid_civic = civic_fanatic_purifiers
+					has_valid_civic = civic_hive_devouring_swarm
+					has_valid_civic = civic_machine_terminator
+				}
+				NOT = {
+					has_global_flag = galactic_community_crisis_fighting
+				}
+			}
+		}
 		
 		AI_weight = {
 			factor = 10
@@ -754,6 +945,14 @@ maintenance_policy = {
 				is_at_war = yes
 				has_ethic = ethic_militarist
 				has_ethic = ethic_fanatic_militarist
+				AND = {
+					NOR = {
+						has_valid_civic = civic_fanatic_purifiers
+						has_valid_civic = civic_hive_devouring_swarm
+						has_valid_civic = civic_machine_terminator
+					}
+					has_global_flag = galactic_community_crisis_fighting
+				}
 			}
 		}
 		
@@ -785,10 +984,18 @@ maintenance_policy = {
 		
 		valid = {
 			and = {
-				is_at_war = yes
 				or = {
+					is_at_war = yes
 					has_ethic = ethic_militarist
 					has_ethic = ethic_fanatic_militarist
+				}
+				AND = {
+					NOR = {
+						has_valid_civic = civic_fanatic_purifiers
+						has_valid_civic = civic_hive_devouring_swarm
+						has_valid_civic = civic_machine_terminator
+					}
+					has_global_flag = galactic_community_crisis_fighting
 				}
 			}
 		}
