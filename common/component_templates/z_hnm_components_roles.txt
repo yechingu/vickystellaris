@@ -25,14 +25,7 @@ utility_component_template = {
 			alloys = @cost0
 		}
 	}
-	ship_modifier = {
-		ship_sensor_range_add = 3
-		ship_emergency_ftl_min_days_mult = -1.0
-		ship_disengage_chance_mult = 2.0
-		ship_hull_regen_add_static = 0.5
-		ship_armor_regen_add_static = 0.5
-		ship_windup_mult = -1.0
-	}
+	
 	ship_behavior = "colossus"
 
 	class_restriction = {
@@ -71,14 +64,7 @@ utility_component_template = {
 		sponsored_colonizer
 	}
 	ship_behavior = "stellarite_default"
-
-	ship_modifier = {
-		ship_emergency_ftl_min_days_mult = -1.0
-		ship_disengage_chance_mult = 1.0
-		ship_hull_regen_add_static = 0.5
-		ship_armor_regen_add_static = 0.5
-		ship_windup_mult = -0.5
-	}
+	component_set = "combat_computers"
 
 	ai_weight = {
 		weight = 100
@@ -99,15 +85,6 @@ utility_component_template = {
 	}
 	ship_modifier = {
 		ship_sensor_range_add = 3
-		ship_emergency_ftl_min_days_mult = -1.0
-		ship_disengage_chance_mult = 2.0
-		ship_hull_regen_add_static = 0.5
-		ship_armor_regen_add_static = 0.5
-		ship_emergency_ftl_min_days_mult = -0.75
-		ship_disengage_chance_mult = 2.0
-		ship_hull_regen_add_static = 0.5
-		ship_armor_regen_add_static = 0.5
-		ship_windup_mult = -0.25
 	}
 	ship_behavior = "colossus"
 

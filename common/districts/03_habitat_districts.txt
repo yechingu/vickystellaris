@@ -56,19 +56,6 @@ district_hab_housing = {
 		potential = {
 			exists = owner
 			owner = {
-				has_origin = origin_void_dwellers
-			}
-		}
-		modifier = {
-			planet_housing_add = 1
-			job_laborer_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
 				has_technology = tech_housing_1
 				has_origin = origin_void_dwellers
 			}
@@ -250,20 +237,6 @@ district_hab_energy = {
 	}
 
 
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_origin = origin_void_dwellers
-			}
-		}
-		modifier = {
-			planet_housing_add = 1
-			job_technician_add = 1
-		}
-	}
-
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -415,20 +388,6 @@ district_hab_science = {
 		}
 		modifier = {
 			planet_housing_add = 1
-		}
-	}
-
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_origin = origin_void_dwellers
-			}
-		}
-		modifier = {
-			planet_housing_add = 1
-			job_researcher_add = 1
 		}
 	}
 
@@ -591,19 +550,6 @@ district_hab_commercial = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = {
-				has_origin = origin_void_dwellers
-			}
-		}
-		modifier = {
-			planet_housing_add = 1
-			job_clerk_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
 			owner = { is_fallen_empire_spiritualist = no }
 		}
 		modifier = {
@@ -709,19 +655,6 @@ district_hab_mining = {
 		}
 		modifier = {
 			planet_housing_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_origin = origin_void_dwellers
-			}
-		}
-		modifier = {
-			planet_housing_add = 1
-			job_miner_add = 1
 		}
 	}
 
@@ -899,20 +832,6 @@ district_hab_cultural = {
 		}
 		modifier = {
 			planet_housing_add = 1
-		}
-	}
-
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_origin = origin_void_dwellers
-			}
-		}
-		modifier = {
-			planet_housing_add = 1
-			job_culture_worker_add = 1
 		}
 	}
 	

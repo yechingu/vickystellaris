@@ -36,6 +36,7 @@ building_colony_shelter = {
 	planet_modifier = {
 		planet_housing_add = 3
 		planet_amenities_add = 3
+		planet_max_buildings_add = 1
 	}
 
 	triggered_planet_modifier = {
@@ -1268,6 +1269,7 @@ building_hive_capital = {
 		job_synapse_drone_add = 2
 		job_maintenance_drone_add = 2
 		job_patrol_drone_add = 1
+		planet_max_buildings_add = 1
 	}
 
 	resources = {
@@ -1344,6 +1346,7 @@ building_hive_major_capital = {
 		job_synapse_drone_add = 3
 		job_maintenance_drone_add = 5
 		job_patrol_drone_add = 2
+		planet_max_buildings_add = 1
 	}
 
 	resources = {
@@ -1573,7 +1576,15 @@ building_hab_major_capital = {
 			minerals = @b2_minerals
 		}
 		upkeep = {
-			energy = @b2_upkeep
+			trigger = {
+				exists = owner
+				owner = {
+					not = {
+						has_origin = origin_void_dwellers
+					}
+				}
+			}
+			energy = 3
 			alloys = 5
 		}
 	}

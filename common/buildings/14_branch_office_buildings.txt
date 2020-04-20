@@ -23,7 +23,7 @@ building_private_mining_consortium = {
 	}
 
 	planet_modifier = {
-		job_miner_add = 1
+		job_miner_add = 2
 	}
 
 	resources = {
@@ -32,7 +32,7 @@ building_private_mining_consortium = {
 			minerals = 500
 		}
 		produces = {
-			minerals = 10
+			minerals = 12
 		}
 		upkeep = {
 			energy = 2
@@ -72,7 +72,7 @@ building_food_conglomerate = {
 			minerals = 500
 		}
 		produces = {
-			food = 10
+			food = 18
 		}
 		upkeep = {
 			energy = 2
@@ -96,6 +96,7 @@ building_virtual_entertainment_studios = {
 
 	planet_modifier = {
 		job_clerk_add = 2
+		job_artisan_add = 1
 	}
 
 	resources = {
@@ -149,6 +150,7 @@ building_private_shipyards = {
 
 	planet_modifier = {
 		job_clerk_add = 2
+		job_foundry_add = 1
 	}
 
 	resources = {
@@ -290,6 +292,7 @@ building_amusement_megaplex = {
 
 	planet_modifier = {
 		planet_amenities_add = 10
+		job_entertainer_add = 1
 	}
 
 	resources = {
@@ -403,7 +406,7 @@ building_corporate_embassy = {
 
 ## CRIME MEGACORP ##
 building_wildcat_miners = {
-	base_buildtime = @b1_time
+	base_buildtime = 120
 
 	branch_office_building = yes
 
@@ -422,9 +425,11 @@ building_wildcat_miners = {
 	}
 
 	planet_modifier = {
-		planet_crime_add = 25
-		trade_value_mult = 0.05
-		job_miner_add =2
+		planet_crime_add = 60
+		planet_crime_mult = 0.1
+		trade_value_mult = 0.1
+		job_miner_add = 4
+		planet_jobs_minerals_produces_mult = 0.1
 	}
 
 	resources = {
@@ -433,7 +438,7 @@ building_wildcat_miners = {
 			minerals = 250
 		}
 		produces = {
-			minerals = 10
+			minerals = 12
 		}
 		upkeep = {
 			energy = 1
@@ -446,7 +451,7 @@ building_wildcat_miners = {
 }
 
 building_bio_reprocessing_facilities = {
-	base_buildtime = @b1_time
+	base_buildtime = 120
 
 	branch_office_building = yes
 
@@ -464,8 +469,9 @@ building_bio_reprocessing_facilities = {
 	}
 
 	planet_modifier = {
-		planet_crime_add = 25
-		trade_value_mult = 0.05
+		planet_crime_add = 60
+		planet_crime_mult = 0.1
+		trade_value_mult = 0.1
 		job_laborer_add = 2
 	}
 
@@ -475,7 +481,7 @@ building_bio_reprocessing_facilities = {
 			minerals = 250
 		}
 		produces = {
-			food = 10
+			food = 18
 		}
 		upkeep = {
 			energy = 1
@@ -488,7 +494,7 @@ building_bio_reprocessing_facilities = {
 }
 
 building_underground_chemists = {
-	base_buildtime = @b1_time
+	base_buildtime = 120
 
 	branch_office_building = yes
 
@@ -498,10 +504,12 @@ building_underground_chemists = {
 	}
 
 	planet_modifier = {
-		planet_crime_add = 25
-		trade_value_mult = 0.05
+		planet_crime_add = 60
+		planet_crime_mult = 0.1
+		trade_value_mult = 0.1
 		job_clerk_add = 1
 		job_laborer_add = 1
+		job_artisan_add = 1
 	}
 
 	resources = {
@@ -541,7 +549,7 @@ building_underground_chemists = {
 }
 
 building_wrecking_yards = {
-	base_buildtime = @b1_time
+	base_buildtime = 120
 
 	branch_office_building = yes
 
@@ -554,8 +562,10 @@ building_wrecking_yards = {
 	}
 
 	planet_modifier = {
-		planet_crime_add = 25
-		trade_value_mult = 0.05
+		planet_crime_add = 60
+		planet_crime_mult = 0.1
+		job_foundry_add = 1
+		trade_value_mult = 0.1
 		job_laborer_add = 2
 	}
 
@@ -565,7 +575,7 @@ building_wrecking_yards = {
 			minerals = 350
 		}
 		produces = {
-			alloys = 3.5
+			alloys = 3
 		}
 		upkeep = {
 			energy = 1
@@ -578,7 +588,7 @@ building_wrecking_yards = {
 }
 
 building_pirate_haven = {
-	base_buildtime = @b1_time
+	base_buildtime = 120
 
 	branch_office_building = yes
 
@@ -595,7 +605,9 @@ building_pirate_haven = {
 	}
 
 	planet_modifier = {
-		planet_crime_add = 40
+		planet_crime_add = 60
+		planet_crime_mult = 0.1
+		trade_value_mult = 0.1
 		job_soldier_add = 2
 	}
 
@@ -630,9 +642,11 @@ building_underground_clubs = {
 	}
 
 	planet_modifier = {
-		planet_crime_add = 40
+		planet_crime_add = 60
+		planet_crime_mult = 0.1
+		trade_value_mult = 0.1
 		planet_amenities_add = 20
-		job_clerk_add = 2
+		job_entertainer_add = 2
 	}
 
 	resources = {
@@ -681,7 +695,9 @@ building_syndicate_outreach_office = {
 	}
 
 	planet_modifier = {
-		planet_crime_add = 40
+		planet_crime_add = 60
+		trade_value_mult = 0.1
+		planet_crime_mult = 0.1
 		job_clerk_add = 4
 	}
 
@@ -715,7 +731,9 @@ building_illicit_research_labs = {
 	}
 
 	planet_modifier = {
-		planet_crime_add = 40
+		planet_crime_add = 60
+		trade_value_mult = 0.1
+		planet_crime_mult = 0.1
 		job_clerk_add = 4
 	}
 
@@ -753,10 +771,11 @@ building_smuggling_rings = {
 
 	planet_modifier = {
 		planet_crime_add = 50
+		planet_crime_mult = 0.2
 		branch_office_value_mult = 0.25
 		trade_value_mult = 0.2
 		job_merchant_add = 1
-		job_criminal_add = 2
+		job_manager_add = 2
 	}
 
 	resources = {
@@ -803,7 +822,9 @@ building_disinformation_center = {
 	}
 
 	planet_modifier = {
-		planet_crime_add = 40
+		planet_crime_add = 60
+		planet_crime_mult = 0.1
+		trade_value_mult = 0.1
 		pop_ethics_shift_speed_mult = 1.5
 		pop_cat_worker_political_power = 0.5
 		pop_cat_slave_political_power = 0.5
@@ -834,7 +855,7 @@ building_disinformation_center = {
 ## GOSPEL MEGACORP ##
 
 building_temple_of_prosperity = {
-	base_buildtime = @b1_time
+	base_buildtime = 120
 	base_cap_amount = 2
 
 	branch_office_building = yes
@@ -845,7 +866,7 @@ building_temple_of_prosperity = {
 	}
 
 	planet_modifier = {
-		job_preacher_add = 2
+		job_preacher_add = 4
 		pop_ethic_spiritualist_attraction_mult = 0.5
 	}
 
@@ -854,8 +875,11 @@ building_temple_of_prosperity = {
 			branch_office_owner = { is_criminal_syndicate = yes }		
 		}
 		modifier = {
-			planet_crime_add = 40
+			planet_crime_add = 50
+			planet_crime_mult = 0.2
 			job_preacher_add = 2
+			trade_value_mult = 0.1
+			pop_ethic_spiritualist_attraction_mult = 0.25
 		}
 	}
 
@@ -902,6 +926,17 @@ building_executive_retreat = {
 	planet_modifier = {
 		trade_value_mult = 0.05
 	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			branch_office_owner = { is_criminal_syndicate = yes }		
+		}
+		modifier = {
+			planet_crime_add = 50
+			job_entertainer_add = 2
+		}
+	}
+
 
 	resources = {
 		category = planet_branch_office_buildings
@@ -945,6 +980,16 @@ building_xeno_tourism_agency = {
 
 	planet_modifier = {
 		trade_value_mult = 0.05
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			branch_office_owner = { is_criminal_syndicate = yes }		
+		}
+		modifier = {
+			planet_crime_add = 50
+			job_entertainer_add = 2
+		}
 	}
 
 	resources = {
