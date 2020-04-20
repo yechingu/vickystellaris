@@ -24,5 +24,20 @@
  planet_uptopian_benefit:0 "Increased Utopian Benefit"
  planet_uptopian_benefit_desc:0 "Utopian Benefit has been increased in this planet to suppress unemployment issues."
 
+ declare_crisis_manual:0 "Declare Crisis Manual"
+ declare_crisis_manual_desc:0 "We must declare Manual for Galactic Crisis, to help all members of Galaxy to fight protect themselves against Crisis"
+
+ edict_crisis_forced_loans:0 "Crisis Forced Loans"
+ edict_crisis_forced_loans_desc:0 "All people of our country must contribute their wealth to military, in defense of the Galaxy"
+
+ edict_crisis_propagenda_gestalt:0 "Proclaim Firm Will to Resist"
+ edict_crisis_propagenda_gestalt_desc:0 "We will not yield to malicious threat against our collective."
+
+ edict_crisis_propagenda:0 "Crisis Progagenda"
+ edict_crisis_propagenda_desc:0 "People really need to be aware of what is going on now."
+ 
+
+
+
 
  
